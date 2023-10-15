@@ -17,7 +17,7 @@ const SectionFive = () => {
           </p>
 
           <div className='px-1 flex  pb-3 pt-3'>
-        <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-md bg-orange text-white '>
+        <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-md bg-[#ffd100]  text-[#1e1e1e] '>
         <h1 className='px-1'>
           Become a volunteer
           </h1> 

@@ -11,7 +11,7 @@ Interested in the industry.
 
       </p>
 
-      <h1 className='text-md py-3 flex justify-center'>Organized by <b className='text-orange px-1'>ATC Africa</b> Powered by <b className='text-orange px-1'>TecHappen</b></h1>
+      <h1 className='text-md py-3 flex justify-center'>Organized by <b className='text-[#ffd100] px-1'>ATC Africa</b> Powered by <b className='text-[#ffd100] px-1'>TecHappen</b></h1>
     
       <h1 className=' py-3 flex justify-center'>© 2024 Tech Starters Conference. All Rights Reserved. </h1>
     </div>

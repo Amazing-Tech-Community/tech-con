@@ -45,7 +45,7 @@ const Navbar = () => {
           alt="logo"
           className="w-12 h-12 sm:w-16 sm:h-12 object-cover object-center "
         />
-        <div className='text-orange px-3 visible sm:hidden font-bold ml-1 '>
+        <div className='text-[#ffd100] px-3 visible sm:hidden font-bold ml-1 '>
           <h1 className='text-xl sm:text-2xl'>TECH STARTERS CONF 24</h1>
         </div>
       </div>
@@ -54,7 +54,7 @@ const Navbar = () => {
         // Mobile view with menu icon
         <div className='flex items-center flex-row mt-2 sm:mt-0'>
           <CgMenuGridR
-            className='w-7 h-7 text-orange cursor-pointer absolute top-4 right-7'
+            className='w-7 h-7 text-[#ffd100] cursor-pointer absolute top-4 right-7'
             onClick={() => setIsDropdownOpen(true)}
           />
         </div>
@@ -62,17 +62,17 @@ const Navbar = () => {
         // Desktop view with navigation links
         <div className='flex px-2 justify-between'>
           <div className='flex flex-row  items-center sm:ml-[-6%] mt-2 sm:mt-0 space-x-2'>
-            <div className='px-1 '><button className=' hover:text-orange'>About</button></div>
-            <div className='px-1 md:px-2'><button className=' hover:text-orange '>Speakers</button></div>
-            <div className='px-1 md:px-2'><button className=' hover:text-orange'>Past Conference</button></div>
-            <div className='px-1 md:px-2'><button className=' hover:text-orange'>Hackathon</button></div>
-            <div className='px-1 md:px-2'><button className=' hover:text-orange'>Volunteer</button></div>
-            <div className='px-1 md:px-2'><button className=' hover:text-orange'>Team</button></div>
-            <div className='px-1 md:px-2'><button className=' hover:text-orange'>Contact</button></div>
+            <div className='px-1 '><button className=' hover:text-[#ffd100]'>About</button></div>
+            <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100] '>Speakers</button></div>
+            <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Past Conference</button></div>
+            <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Hackathon</button></div>
+            <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Volunteer</button></div>
+            <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Team</button></div>
+            <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Contact</button></div>
           </div>
 
           <div className='flex items-center flex-row mt-2 sm:mt-0'>
-            <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-sm bg-orange text-white '>
+            <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-sm bg-[#ffd100] text-[#1e1e1e] '>
               <h1 className='px-1'>
                 Watch Videos
               </h1>
@@ -83,7 +83,7 @@ const Navbar = () => {
 
             <div className='px-4'>
               <CgMenuGridR
-                className='w-7 h-7 text-orange cursor-pointer '
+                className='w-7 h-7 text-[#ffd100] cursor-pointer '
                 onClick={() => setIsDesktopOpen(true)}
               />
             </div>
@@ -98,7 +98,7 @@ const Navbar = () => {
       {isDesktopOpen && (
         <div className='fixed top-0 left-0 w-screen px-3 z-10'>
           <AiOutlineCloseCircle
-            className='w-8 h-8 text-orange cursor-pointer absolute top-4 right-16'
+            className='w-8 h-8 text-[#ffd100] cursor-pointer absolute top-4 right-16'
             onClick={() => setIsDesktopOpen(false)}
           />
           {/* Add your mobile navigation links here */}
@@ -124,7 +124,7 @@ const Navbar = () => {
                   alt="logo"
                   className=" sm:w-16 sm:h-16 object-cover object-center"
                 />
-                <div className='text-orange py-3 pt-5 font-bold ml-1 '>
+                <div className='text-[#1e1e1e] py-3 pt-5 font-extrabold ml-1 '>
                   <h1 className='text-sm sm:text-base flex '>TECH STARTERS CONF 24</h1>
                 </div>
 
@@ -134,7 +134,7 @@ const Navbar = () => {
                initial={{ y: 200 }} 
                animate={{ y: 0 }}     
                transition={{ delay: 0.8, duration: 1.5}}
-              className='py-5 text-center'>
+              className='py-5 text-center text-[#1e1e1e]'>
                 Tech Starters Conference is designed to help individuals navigate the overwhelming world of technology and provide a clear direction for students, enthusiasts, career changers, tech beginners and anyone
                 Interested in the industry.
               </motion.p>
@@ -143,8 +143,8 @@ const Navbar = () => {
                initial={{ y: 200 }} 
                animate={{ y: 0 }}     
                transition={{ delay: 0.8, duration: 1.5}}
-              className='flex flex-row justify-center items-center px-5 py-5'>
-                <div className='px-2 py-2 shadow-lg'>
+              className='flex flex-row justify-center text-[#1e1e1e] items-center px-5 py-5'>
+                <div className='px-2 py-2 text-[#1e1e1e] shadow-lg'>
                   <a>
                   <FaFacebookF className='w-5 h-5 mt-0.5'/>
                   </a>
@@ -180,7 +180,7 @@ const Navbar = () => {
       {isMobile && isDropdownOpen && (
         <div className='fixed top-0 left-0 w-screen h-screen bg-white z-10'>
           <AiOutlineCloseCircle
-            className='w-8 h-8 text-orange cursor-pointer absolute top-4 right-10'
+            className='w-8 h-8 text-[#ffd100] cursor-pointer absolute top-4 right-10'
             onClick={() => setIsDropdownOpen(false)}
           />
           {/* Add your mobile navigation links here */}

@@ -21,7 +21,7 @@ const SectionFour = () => {
        <h1 className='pt-12 text-white font-bold z-10'>Then Sign up for Hackathon</h1>
 
        <div className='px-1 flex justify-center pt-7 pb-3 z-10'>
-        <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-sm shadow-orange bg-orange text-white '>
+        <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-sm shadow-black bg-[#ffd100] text-[#1e1e1e] '>
         <h1 className='px-1'>
           Signup
           </h1> 

@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Layout>
+        <Layout className="bg-[#1e1e1e]">
           <Hero />
           <SectionOne />
           <SectionTwo />

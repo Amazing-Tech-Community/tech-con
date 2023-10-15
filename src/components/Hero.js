@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className='h-[500px] text-white flex flex-col items-center justify-center z-10'>
+    <div className='h-[500px] bg-[#1e1e1e] text-[#fafafa] flex flex-col items-center justify-center z-10'>
 
       <Caro
         autoPlay={true}
@@ -59,9 +59,9 @@ const Hero = () => {
                 animate={{ y: 0 }}     
                 transition={{ delay: 0.8, duration: 2.4}}
                 className='flex flex-row items-center justify-center py-5 pt-10 '>
-                  <MdOutlineLocationOn className='w-6 h-6 text-white font-bold' />
+                  <MdOutlineLocationOn className='w-6 h-6 text-[#ffd100] font-bold' />
 
-                  <h1 className='px-2 flex text-xl font-bold'>
+                  <h1 className='px-2 flex text-xl text-[#ffd100] font-bold'>
                     University of Ibadan
                   </h1>
 

@@ -16,7 +16,7 @@ const SectionSix = () => {
       Event Speakers
     </h1>
 
-    <AnimatedText text="Coming Soon" className='xx:text-3xl sm:text-4xl z-10 text-orange' />
+    <AnimatedText text="Coming Soon" className='xx:text-3xl sm:text-4xl z-10 text-[#ffd100]' />
     </div>
   )
 }
