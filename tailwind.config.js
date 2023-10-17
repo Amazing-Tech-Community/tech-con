@@ -1,4 +1,4 @@
-const {fontFamily} = require('tailwindcss/defaultTheme')
+// const {fontFamily} = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -26,9 +26,9 @@ module.exports = {
         xl: "1700px",
       },
 
-      fontFamily: {
-        inter: ['var(--font-inter)', ...fontFamily.sans],
-      },
+      // fontFamily: {
+      //   'sf-pro': ['SF Text', 'system-ui'],
+      // },
     },
   },
   plugins: [],

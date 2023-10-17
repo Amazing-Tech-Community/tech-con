@@ -43,7 +43,7 @@ const Navbar = () => {
         <Image
           src={logo}
           alt="logo"
-          className="w-12 h-12 sm:w-16 sm:h-12 object-cover object-center "
+          className="w-12 h-12 sm:w-full bg-[#ffd100] p-2 sm:h-12 object-cover object-center "
         />
         <div className='text-[#ffd100] px-3 visible sm:hidden font-bold ml-1 '>
           <h1 className='text-xl sm:text-2xl'>TECH STARTERS CONF 24</h1>
@@ -74,7 +74,7 @@ const Navbar = () => {
           <div className='flex items-center flex-row mt-2 sm:mt-0'>
             <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-sm bg-[#ffd100] text-[#1e1e1e] '>
               <h1 className='px-1'>
-                Watch Videos
+                Sponsor
               </h1>
 
               {/* <MdAddCircle className='w-5 h-5 mt-0.5 text-white'/> */}

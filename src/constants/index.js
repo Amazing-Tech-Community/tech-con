@@ -7,9 +7,6 @@ export const slides = [
     {
       img: "/slidetwo.jpg",
     },
-    {
-      img: "/slidethree.jpg", 
-      
-    },
+   
 
   ];

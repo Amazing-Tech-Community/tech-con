@@ -32,10 +32,12 @@ const AnimatedNumbers = ({ value }) => {
 const SectionOne = () => {
   return (
     <div className='grid xx:grid-cols-1 sm:grid-cols-2 gap-0 px-2 py-3 w-[100%] text-[#fafafa] '>
-      <div className='w-[89%] flex flex-col'>
-        <h1 className='py-5 text-3xl font-semibold'>
-          Largest Tech Starters Conference for Newbies & Professionals.
-        </h1>
+      <div className='w-[90%] flex flex-col'>
+      <p className='text-sm py-3 font-extrabold leading-5'>
+          Tech Starters Conference is designed to help individuals navigate the overwhelming world of technology and provide a clear direction for students, enthusiasts, career changers, tech beginners and anyone
+Interested in the industry.
+
+          </p>
 
         <div className='flex flex-row justify-center py-2 w-[270px]'>
           <VscCalendar className='w-6 h-6 text-[#ffd100]' />
@@ -49,14 +51,6 @@ const SectionOne = () => {
 
         </div>
 
-        <div className='flex flex-row justify-center ml-[-0.5rem] py-2 w-[270px]'>
-        <MdOutlineLocationOn className='w-6 h-6 text-[#ffd100]'/>
-
-        <h1 className='px-2 font-semibold'>Where:</h1>
-          <h1 className=''>
-            University of Ibadan
-          </h1>
-              </div>
 
               <div className='px-1 flex justify-center pb-6 pt-9'>
         <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-md bg-[#ffd100] text-[#1e1e1e] '>
@@ -89,8 +83,8 @@ const SectionOne = () => {
         </div>
 
         <div className='flex flex-row px-1 justify-center'>
-        <div className='text-[#1e1e1e] pr-3 px-1 py-2'>
-        <span className='flex justify-center xx:ml-[-2px]  sm:ml-[-8px] xx:mr-[-16px] sm:mr-[-0px]  text-3xl pb-1 font-bold'>
+        <div className='text-[#1e1e1e] pr-2 px-1 py-2'>
+        <span className='flex justify-center xx:ml-[-2px]  sm:ml-[-9px] xx:mr-[-16px] sm:mr-[-0px]  text-3xl pb-1 font-bold'>
          <AnimatedNumbers value={1 }/> K +
        </span>
         <h2 className='text-sm font-medium  xx:mr-[-16px] sm:mr-[-0px] flex mt-1 justify-center capitalize'>
@@ -136,17 +130,12 @@ const SectionOne = () => {
 
       <div className='w-[100%] sm:ml-[-3rem] flex flex-col py-5'>
         <div>
-          <p className='text-sm py-3 font-extrabold leading-5'>
-          Tech Starters Conference is designed to help individuals navigate the overwhelming world of technology and provide a clear direction for students, enthusiasts, career changers, tech beginners and anyone
-Interested in the industry.
-
-          </p>
 
         
-          <div className='py-2 px-2 grid xx:grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-20'>
+          <div className='py-2 px-5 grid xx:grid-cols-1 gap-2 '>
             
             
-          <div className='bg-[#fafafa] text-[#1e1e1e] sm:w-[170px] rounded-md  shadow-md py-2 px-3'>
+          <div className='bg-[#fafafa] text-[#1e1e1e]  rounded-md  shadow-md py-2 px-3'>
               <h1 className='py-2 font-semibold text-lg'>Standard Ticket (#5000)</h1>
 
               <ul className='list-none'>
@@ -157,44 +146,8 @@ Interested in the industry.
               <li>- Shirt </li>
 
       </ul>
-            
 
-          </div>
-
-            <div className='bg-[#fafafa] sm:w-[170px] text-[#1e1e1e] rounded-md shadow-md py-2 px-3'>
-              <h1 className='py-2 font-semibold text-lg'>Basics Ticket (N3000)</h1>
-
-              <ul className='list-none'>
-              <li>- Ticket </li>
-              <li>- Stickers </li>
-              <li>- Food </li>
-              <li>- Networking </li>
-
-      </ul>
-            </div>
-
-          
-            
-            <div className='bg-[#fafafa] text-[#1e1e1e] sm:w-[170px] rounded-md shadow-md py-2 px-3'>
-              <h1 className='py-2 font-semibold text-lg'>Standard Ticket (#5000)</h1>
-
-              <ul className='list-none'>
-              <li>- Ticket </li>
-              <li>- Food </li>
-              <li>- Souvenirs </li>
-              <li>- Networking </li>
-              <li>- Shirt </li>
-
-      </ul>
-            
-
-          </div>
-          
-
-          </div>
-
-  
-          <div className='px-1 flex justify-center pb-2 pt-20'>
+      <div className='px-1 flex justify-center pb-2 pt-10'>
         <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-md bg-[#ffd100] text-[#1e1e1e] '>
         <h1 className='px-1'>
          <b> Pay</b>
@@ -204,6 +157,63 @@ Interested in the industry.
 
       </button>
       </div>
+            
+
+          </div>
+
+            <div className='bg-[#fafafa]  text-[#1e1e1e] rounded-md shadow-md py-2 px-3'>
+              <h1 className='py-2 font-semibold text-lg'>Basics Ticket (N3000)</h1>
+
+              <ul className='list-none'>
+              <li>- Ticket </li>
+              <li>- Stickers </li>
+              <li>- Food </li>
+              <li>- Networking </li>
+
+      </ul>
+
+      <div className='px-1 flex justify-center pb-2 pt-10'>
+        <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-md bg-[#ffd100] text-[#1e1e1e] '>
+        <h1 className='px-1'>
+         <b> Pay</b>
+          </h1> 
+
+        <MdAddCircle className='w-5 h-5 mt-0.5 text-[#1e1e1e]'/>
+
+      </button>
+      </div>
+            </div>
+
+          
+            
+            <div className='bg-[#fafafa] text-[#1e1e1e]  rounded-md shadow-md py-2 px-3'>
+              <h1 className='py-2 font-semibold text-lg'>Standard Ticket (#5000)</h1>
+
+              <ul className='list-none'>
+              <li>- Ticket </li>
+              <li>- Food </li>
+              <li>- Souvenirs </li>
+              <li>- Networking </li>
+              <li>- Shirt </li>
+
+              <div className='px-1 flex justify-center pb-2 pt-10'>
+        <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-md bg-[#ffd100] text-[#1e1e1e] '>
+        <h1 className='px-1'>
+         <b> Pay</b>
+          </h1> 
+
+        <MdAddCircle className='w-5 h-5 mt-0.5 text-[#1e1e1e]'/>
+
+      </button>
+      </div>
+
+      </ul>
+            
+
+          </div>
+          
+          </div>
+
 
 
         </div>

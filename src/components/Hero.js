@@ -44,8 +44,8 @@ const Hero = () => {
                     initial={{ y: 200,  }} 
                     animate={{ y: 0 }}     
                     transition={{ delay: 0.8, duration: 2}}
-                className='font-semibold text-6xl py-4'
-                style={{ color: 'transparent', WebkitTextStroke: '1px white' }}
+                className='font-semibold text-[#ffd100] text-6xl py-4'
+                style={{  WebkitTextStroke: '1px #ffd100' }}
                 >CONFERENCE</motion.h1>
 
                 <motion.h1 
