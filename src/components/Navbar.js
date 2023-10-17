@@ -74,7 +74,7 @@ const Navbar = () => {
           <div className='flex items-center flex-row mt-2 sm:mt-0'>
             <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-sm bg-[#ffd100] text-[#1e1e1e] '>
               <h1 className='px-1'>
-                Sponsor
+                Sponsor Us
               </h1>
 
               {/* <MdAddCircle className='w-5 h-5 mt-0.5 text-white'/> */}
@@ -119,11 +119,14 @@ const Navbar = () => {
               animate={{ y: 0 }}     
               transition={{ delay: 0.8, duration: 1.5}}
               className='flex items-center flex-col justify-center sm:justify-center '>
+                <div className='sm:w-18 sm:h-18'>
                 <Image
                   src={logo}
                   alt="logo"
-                  className=" sm:w-16 sm:h-16 object-cover object-center"
+                  className="  p-2  object-cover object-center"
                 />
+                </div>
+             
                 <div className='text-[#1e1e1e] py-3 pt-5 font-extrabold ml-1 '>
                   <h1 className='text-sm sm:text-base flex '>TECH STARTERS CONF 24</h1>
                 </div>
