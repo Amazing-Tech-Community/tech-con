@@ -43,11 +43,11 @@ const Navbar = () => {
         <Image
           src={logo}
           alt="logo"
-          className="w-12 h-12 sm:w-full bg-[#ffd100] p-2 sm:h-12 object-cover object-center "
+          className="w-[113px] h-14 sm:w-full bg-[#ffd100] xx:p-1 sm:p-2 sm:h-12 object-cover object-center "
         />
-        <div className='text-[#ffd100] px-3 visible sm:hidden font-bold ml-1 '>
-          <h1 className='text-xl sm:text-2xl'>TECH STARTERS CONF 24</h1>
-        </div>
+        {/* <div className='text-[#ffd100] px-3 visible sm:hidden font-bold ml-1 '>
+          <h1 className='text-md sm:text-2xl'>TECH STARTERS CONF 24</h1>
+        </div> */}
       </div>
 
       {isMobile ? (
@@ -181,13 +181,17 @@ const Navbar = () => {
 
       {/* Mobile menu with close icon */}
       {isMobile && isDropdownOpen && (
-        <div className='fixed top-0 left-0 w-screen h-screen bg-white z-10'>
+        <motion.div 
+        initial={{ x: 1000 }} 
+        animate={{ x: 0 }}     
+        transition={{ delay: 0.2, duration: 1.2}}
+        className='fixed top-0 left-0 w-screen h-[560px] bg-[#1e1e1e] z-10'>
           <AiOutlineCloseCircle
             className='w-8 h-8 text-[#ffd100] cursor-pointer absolute top-4 right-10'
             onClick={() => setIsDropdownOpen(false)}
           />
           {/* Add your mobile navigation links here */}
-          <div className='pt-20 text-center'>
+          <div className='pt-20 block text-center justify-center '>
             <div className='px-4 py-2'><button className='font-semibold hover:text-orange'>About</button></div>
             <div className='px-4 py-2'><button className='font-semibold hover:text-orange '>Speakers</button></div>
             <div className='px-4 py-2'><button className='font-semibold hover:text-orange'>Past Conference</button></div>
@@ -196,7 +200,7 @@ const Navbar = () => {
             <div className='px-4 py-2'><button className='font-semibold hover:text-orange'>Team</button></div>
             <div className='px-4 py-2'><button className='font-semibold hover:text-orange'>Contact</button></div>
           </div>
-        </div>
+        </motion.div>
       )}
     </nav>
   );

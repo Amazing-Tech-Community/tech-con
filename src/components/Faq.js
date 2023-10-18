@@ -33,7 +33,7 @@ const Faq = () => {
   ];
 
   return (
-    <div className="py-14 sm:px-20 px-5">
+    <div className="py-14 sm:px-20 px-3">
       <div>
         <div className="py-5 sm:px-4 xx:px-2 pt-3 mb-6">
           <div className="sm:text-[55px] text-xl sm:leading-[3rem] font-mediumm justify-center text-center ">
@@ -54,8 +54,8 @@ const Faq = () => {
                   className="w-full bg-gray-50 transition-colors duration-200 ease-in-out"
                   onClick={() => toggleAccordion(index)}
                 >
-                  <div className="flex items-center justify-between px-4 py-4 sm:px-6">
-                    <span className="text-lg font-medium text-gray-900">
+                  <div className="flex items-center justify-between px-1 py-4 sm:px-6">
+                    <span className="xx:text-md sm:text-lg md:text-lg font-medium text-gray-900">
                       {faq.question}
                     </span>
                     <svg

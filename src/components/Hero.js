@@ -38,13 +38,13 @@ const Hero = () => {
                 initial={{ y: 200 }} 
                 animate={{ y: 0 }}     
                 transition={{ delay: 0.8, duration: 1.5}}
-                 className='font-bold text-4xl z-10 py-2'><b>TECH STARTERS</b></motion.h1>
+                 className='font-bold text-3xl sm:text-4xl z-10 py-2'><b>TECH STARTERS</b></motion.h1>
 
                 <motion.h1 
                     initial={{ y: 200,  }} 
                     animate={{ y: 0 }}     
                     transition={{ delay: 0.8, duration: 2}}
-                className='font-semibold text-[#ffd100] text-6xl py-4'
+                className='font-semibold text-[#ffd100] xx:text-5xl sm:text-6xl py-4'
                 style={{  WebkitTextStroke: '1px #ffd100' }}
                 >CONFERENCE</motion.h1>
 

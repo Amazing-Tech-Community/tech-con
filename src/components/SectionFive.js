@@ -4,9 +4,9 @@ import vol from "../images/vol.jpg";
 
 const SectionFive = () => {
   return (
-    <div className='grid grid-cols-2 gap-2 px-5 py-6 '>
+    <div className='grid sm:grid-cols-2 gap-2 px-5 py-6 '>
       <div >
-      <h1 className='py-5 text-4xl font-semibold'>
+      <h1 className='pt-5 sm:text-4xl xx:text-2xl font-semibold'>
       Join the Team of volunteers. 	
         </h1>
 

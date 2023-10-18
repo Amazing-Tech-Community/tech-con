@@ -2,10 +2,10 @@ import React from 'react'
 
 const SectionThree = () => {
   return (
-    <div className='flex flex-col justify-center pt-10 '>
+    <div className='flex flex-col justify-center py-6 pt-10 '>
       <h1 className='flex py-3 justify-center font-bold text-3xl'>Video Thriller</h1>
 
-      <div className='px-[15rem] flex py-3 justify-center'>
+      <div className='md:px-[15rem] xx:px-[10px] flex py-3 justify-center'>
       <iframe
           src="https://www.youtube.com/watch?v=BN9sGR948RM"
           title="Video Player"

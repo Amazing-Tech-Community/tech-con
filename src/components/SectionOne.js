@@ -31,8 +31,8 @@ const AnimatedNumbers = ({ value }) => {
 
 const SectionOne = () => {
   return (
-    <div className='grid xx:grid-cols-1 sm:grid-cols-2 gap-0 px-2 py-3 w-[100%] text-[#fafafa] '>
-      <div className='w-[90%] flex flex-col'>
+    <div className='grid xx:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-0 px-2 py-3 w-[100%] text-[#fafafa] '>
+      <div className='w-[100%] flex flex-col'>
       <p className='text-sm py-3 font-extrabold leading-5'>
           Tech Starters Conference is designed to help individuals navigate the overwhelming world of technology and provide a clear direction for students, enthusiasts, career changers, tech beginners and anyone
 Interested in the industry.
@@ -63,61 +63,62 @@ Interested in the industry.
       </button>
       </div>
 
-      <div className='relative py-5 '>
+      <div className='relative py-5 w-full '>
         <div className='absolute p-3 bg-[#1e1e1e] rounded-full mt-[50px] ml-[-14px]'></div>
-        <div className='absolute p-3 bg-[#1e1e1e] rounded-full mt-[48px] xx:right-[-56px] sm:right-[-14px]'></div>
-      <div className='grid xx:grid-cols-4 xx:w-[350px] sm:w-full bg-[#ffd100] rounded-md shadow-md py-5'>
+        <div className='absolute p-3 bg-[#1e1e1e] rounded-full mt-[48px] xx:right-[-12px] sm:right-[-14px] md:right-[-8px]
+        '></div>
+      <div className='grid xx:grid-cols-4 gap-0 w-full sm:w-full md:w-full bg-[#ffd100] rounded-md shadow-md py-5'>
         <div className='flex flex-row justify-center px-2'>
         <div className='text-[#1e1e1e] px-2 py-2'>
-        <span className='flex justify-center text-4xl pb-1 font-bold'>
+        <span className='flex justify-center xx:text-2xl sm:text-3xl sm:pr-[2rem]  pb-1 font-bold'>
          <AnimatedNumbers value={10 }/>  +
        </span>
-        <h2 className='text-sm font-medium flex justify-center capitalize'>
+        <h2 className='text-sm font-medium flex justify-center sm:pr-[2rem] capitalize'>
            Speakers
          </h2> 
         </div>
 
-        <div className='flex justify-center items-center border-l-2 border-l-black/20 px-1 h-12 mt-3.5'>
+        <div className=' border-l-2 border-l-black/20 px-1 h-12 mt-3.5'>
          
         </div>
         </div>
 
         <div className='flex flex-row px-1 justify-center'>
         <div className='text-[#1e1e1e] pr-2 px-1 py-2'>
-        <span className='flex justify-center xx:ml-[-2px]  sm:ml-[-9px] xx:mr-[-16px] sm:mr-[-0px]  text-3xl pb-1 font-bold'>
+        <span className='flex justify-center xx:ml-[-0px]  sm:ml-[-2rem] xx:mr-[-16px] sm:mr-[-0px] xx:text-2xl sm:text-3xl pb-1 font-bold'>
          <AnimatedNumbers value={1 }/> K +
        </span>
-        <h2 className='text-sm font-medium  xx:mr-[-16px] sm:mr-[-0px] flex mt-1 justify-center capitalize'>
+        <h2 className='text-sm font-medium  xx:mr-[-16px]  sm:pr-[2rem] sm:mr-[-0px] flex  justify-center capitalize'>
           Attendees
          </h2> 
         </div>
 
-        <div className='flex justify-center items-center border-r-2 border-r-black/20 ml-5 h-12 mt-3.5'>
+        <div className=' border-r-2 border-r-black/20 xx:ml-4 sm:ml-5 md:ml-5 h-12 mt-3.5'>
          
         </div>
         </div>
 
         <div className='flex flex-row px-2 justify-center'>
-        <div className='text-[#1e1e1e] px-2 pr-3  py-2'>
-        <span className='flex justify-center xx:ml-[-2px]  sm:ml-[-8px] xx:mr-[-16px] sm:mr-[-0px] text-4xl pb-1 font-bold'>
+        <div className='text-[#1e1e1e] px-2 pr-3 sm:pr-[2rem]  py-2'>
+        <span className='flex justify-center xx:ml-[-2px]  sm:ml-[-1rem] xx:mr-[-16px] sm:mr-[-0px] xx:text-2xl sm:text-3xl pb-1 font-bold'>
          <AnimatedNumbers value={8 }/>  +
        </span>
-        <h2 className='text-sm font-medium flex justify-start xx:mr-[-16px] sm:mr-[-0px   capitalize'>
+        <h2 className='text-sm font-medium flex justify-start xx:mr-[-16px] sm:ml-[-1rem] sm:mr-[-0px]   capitalize'>
           Programs
          </h2> 
         </div>
 
-        <div className='flex justify-center items-center border-r-2 border-r-black/20 px-1 h-12 mt-3.5'>
+        <div className=' border-r-2 border-r-black/20 px-1 h-12 mt-3.5'>
          
         </div>
         </div>
         
         <div className='flex flex-row px-2 justify-center'>
         <div className='text-[#1e1e1e] px-2 py-2'>
-        <span className='flex justify-center text-4xl pb-1 font-bold'>
+        <span className='flex justify-center xx:text-2xl sm:ml-[-2rem] sm:text-3xl pb-1 font-bold'>
          <AnimatedNumbers value={5 }/>  +
        </span>
-        <h2 className='text-sm font-medium flex justify-center capitalize'>
+        <h2 className='text-sm font-medium flex sm:ml-[-2rem] justify-center capitalize'>
            Sponsors
          </h2> 
         </div>
@@ -128,7 +129,7 @@ Interested in the industry.
 
       </div>
 
-      <div className='w-[100%] sm:ml-[-3rem] flex flex-col py-5'>
+      <div className='w-[100%]  flex flex-col py-5'>
         <div>
 
         
@@ -213,8 +214,6 @@ Interested in the industry.
           </div>
           
           </div>
-
-
 
         </div>
 

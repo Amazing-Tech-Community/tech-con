@@ -4,12 +4,12 @@ const SectionTwo = () => {
   return (
     <div className='py-3 px-3 flex flex-col sm:flex-row '>
       <div className='p-40 w-[55%] bg-[#130d2d66] flex justify-center text-white'>Video</div>
-      <div className='py-6 px-16 flex flex-col justify-center w-[45%] bg-[#fafafa] rounded-md text-white shadow-md ml-[-20px] mt-[20px] mb-[-20px]'>
-        <h1 className='text-4xl flex justify-center text-[#1e1e1e] font-bold py-3'>
+      <div className='py-6 sm:px-6 xx:px-4 flex flex-col justify-center xx:w-full sm:w-[45%] bg-[#fafafa] rounded-md text-white shadow-md sm:ml-[-20px] mt-[20px] mb-[-20px]'>
+        <h1 className='sm:text-3xl xx:text-xl flex justify-start text-[#1e1e1e] font-bold py-3'>
         Last year was mind blowing
         </h1>
 
-        <p className='text-md text-[#1e1e1e] py-5 leading-6'>
+        <p className='text-md text-[#1e1e1e] py-5 xx:px-1 leading-6'>
         We had an incredible conference moment with more than 200+ attendees. The conference featured Panel sessions,
          networking, Breakout sessions and a lot of fun.
         </p>
