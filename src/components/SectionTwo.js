@@ -5,11 +5,11 @@ import Image from 'next/image';
 const SectionTwo = () => {
   return (
     <div className='py-3 px-3 flex flex-col sm:flex-row '>
-     <div className='py-5 px-2'>
+     <div className='py-5 px-7 sm:mr-[-2rem] md:mr-[-2rem]'>
       <Image
               src={last}
               alt="img"
-              width={400}
+              width={500}
               height={500}
               className=""
             />

@@ -39,7 +39,7 @@ const SectionOne = () => {
 
         </p>
 
-        <div className='flex flex-row justify-center py-2 w-[270px]'>
+        <div className='flex flex-row justify-center py-2 '>
           <VscCalendar className='w-6 h-6 text-[#ffd100]' />
 
           <h1 className='px-2 font-semibold'>When:</h1>
@@ -61,10 +61,10 @@ const SectionOne = () => {
 
               <motion.div 
                
-              className='bg-[#fafafa] transition-all duration-500 hover:rotate-1 hover:scale-80 text-[#1e1e1e]  rounded-md  shadow-md '>
+              className='bg-[#fafafa] transition-all duration-500  hover:rotate-1 hover:scale-80 text-[#1e1e1e]  rounded-md  shadow-md '>
                 <h1 className='py-2 font-extrabold flex justify-center bg-[#ffd100] text-lg'>Standard Ticket (#5000)</h1>
 
-                <ul className='text-sm py-1 px-2 font-semibold'>
+                <ul className='text-sm py-1 px-4 font-semibold'>
                   <li className='py-1'>Everything is FREE </li>
                   <li className='py-1'>Participate in a workshop and get a certificate </li>
                   <li className='py-1'>Opportunity to participate in the event hackathon </li>
@@ -97,7 +97,7 @@ const SectionOne = () => {
                 </div>
                 
 
-                <ul className='list-none py-2 px-2 font-semibold'>
+                <ul className='list-none py-2 px-4 font-semibold'>
                   <li className='py-1' >Everything is Standard  </li>
                   <li className='py-1'>Free access to premium resources that will aid professional growth </li>
                   <li className='py-1'>One-on-one mentorship with industry experts</li>
@@ -107,8 +107,6 @@ const SectionOne = () => {
                 </ul>
 
                 <motion.div 
-                  whileHover={{ y: -4 }}
-                  whileTap={{ scale: 0.9 }}
                 className='px-1 flex justify-center py-3'>
                   <button className='flex justify-between flex-row hover:bg-[#1e1e1e] hover:text-white py-2 px-2 rounded-md shadow-md bg-[#ffd100] text-[#1e1e1e] '>
                     <h1 className='px-1'>
@@ -130,9 +128,9 @@ const SectionOne = () => {
                   {/* <li className='py-1'>Access to the live stream and recorded event</li>
                   <li className='py-1'>Access to a global community of black women in over 15 countries</li> */}
 
-                  <h1 className='py-5 flex justify-center'>Coming Soon</h1>
+                  <h1 className='py-10 flex justify-center'>Coming Soon</h1>
 
-                  <div className='px-1 flex justify-center py-3 mt-40'>
+                  <div className='px-1 flex justify-center py-3 mt-20'>
                     <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-md bg-[#ffd100] hover:bg-[#1e1e1e] hover:text-white text-[#1e1e1e] '>
                       <h1 className='px-1'>
                         <b> Get Ticket</b>

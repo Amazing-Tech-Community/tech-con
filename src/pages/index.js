@@ -9,6 +9,7 @@ import SectionSix from "../components/SectionSix";
 import Hero from "@/components/Hero";
 // import Pics from "@/components/Pics";
 import Faq from "@/components/Faq";
+import Sponsors from "@/components/Sponsors";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
           <SectionFour />
           <SectionFive />
           <SectionSix />
+          <Sponsors />
           {/* <Pics /> */}
           <Faq />
         </Layout>
