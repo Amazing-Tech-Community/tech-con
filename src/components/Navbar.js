@@ -8,6 +8,7 @@ import { BsTwitter} from 'react-icons/bs';
 import { FaLinkedinIn} from 'react-icons/fa';
 import { AiFillYoutube} from 'react-icons/ai';
 import { motion } from "framer-motion";
+import Link from 'next/link';
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -39,17 +40,20 @@ const Navbar = () => {
   return (
     <nav className='py-2  flex flex-row justify-between sm:flex-row sm:items-center '>
 
+      <Link href='/'>
       <div className='flex items-center justify-center sm:justify-center '>
         <Image
           src={logo}
           alt="logo"
-          className="w-[113px] h-14 sm:w-full bg-[#ffd100] xx:p-1 sm:p-2 sm:h-12 object-cover object-center "
+          className="w-[113px] h-14 sm:w-full xx:p-1 sm:p-2 sm:h-12 object-cover object-center "
         />
         {/* <div className='text-[#ffd100] px-3 visible sm:hidden font-bold ml-1 '>
           <h1 className='text-md sm:text-2xl'>TECH STARTERS CONF 24</h1>
         </div> */}
       </div>
 
+      </Link>
+     
       {isMobile ? (
         // Mobile view with menu icon
         <div className='flex items-center flex-row mt-2 sm:mt-0'>
@@ -62,20 +66,41 @@ const Navbar = () => {
         // Desktop view with navigation links
         <div className='flex px-2 justify-between'>
           <div className='flex flex-row  items-center sm:ml-[-6%] mt-2 sm:mt-0 space-x-2'>
+
+            <Link href='/About'>     
             <div className='px-1 '><button className=' hover:text-[#ffd100]'>About</button></div>
+            </Link>
+            
+            <Link href='/Speakers'>     
             <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100] '>Speakers</button></div>
+            </Link>
+
+            <a href='https://photos.google.com/share/AF1QipMbwsqlm7t6-LsuL8qvVJaUwMxImkulVG1Fq4SvUT_QuUVZfubHUfyMPnzDtjrHkQ?key=RlZ4NnozUVdSY1NCRWNpSGV6MXJlWVNheWN0S0pB' target={'_blank'}>     
             <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Past Conference</button></div>
+            </a>
+
+            <a href='https://docs.google.com/forms/d/e/1FAIpQLSfteKt4tukk2wF7QPNd2lKa2D7c-hBeikcIk9BP7a-XRUhdrA/viewform' target={'_blank'}>     
             <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Hackathon</button></div>
+            </a>
+
+            <a href='https://docs.google.com/forms/d/e/1FAIpQLSdLeOLeSEJfDde1QDlI91bRa4y9FkB3jSZRGxd8ORenOrzwbQ/viewform' target={'_blank'}>     
             <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Volunteer</button></div>
+            </a>
+
+            <Link href='/Team'>     
             <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Team</button></div>
-            <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Contact</button></div>
+            </Link>
+           
+            <Link href='/Contact'>     
+              <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Contact</button></div>
+            </Link>
           </div>
 
           <div className='flex items-center flex-row mt-2 sm:mt-0'>
-            <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-sm bg-[#ffd100] text-[#1e1e1e] '>
-              <h1 className='px-1'>
+            <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-sm bg-[#ffd100] text-[#1e1e1e] hover:bg-[#1e1e1e] hover:border-2 hover:border-[#ffd100] hover:text-[#ffd100]'>
+              <a href='http://wa.me/2348123051357#' target={'_blank'} className='px-1'>
                 Sponsor Us
-              </h1>
+              </a>
 
               {/* <MdAddCircle className='w-5 h-5 mt-0.5 text-white'/> */}
 
@@ -147,29 +172,49 @@ const Navbar = () => {
                animate={{ y: 0 }}     
                transition={{ delay: 0.8, duration: 1.5}}
               className='flex flex-row justify-center text-[#1e1e1e] items-center px-5 py-5'>
-                <div className='px-2 py-2 text-[#1e1e1e] shadow-lg'>
-                  <a>
+                <motion.div 
+                   whileHover={{ y: -6 }}
+                   whileTap={{ scale: 0.9 }}
+                className='px-2 py-2 rounded-md bg-white text-[#264c72] shadow-lg'>
+                  <motion.a
+                   whileHover={{ y: -6 }}
+                   whileTap={{ scale: 0.9 }}>
                   <FaFacebookF className='w-5 h-5 mt-0.5'/>
-                  </a>
-                </div>
+                  </motion.a>
+                </motion.div>
 
-                <div className='shadow-lg px-2 py-2 ml-1'>
-                  <a>
+                <motion.div 
+                   whileHover={{ y: -6 }}
+                   whileTap={{ scale: 0.9 }}
+                className='shadow-lg rounded-md bg-white text-[#264c72] px-2 py-2 ml-1'>
+                  <motion.a
+                   whileHover={{ y: -6 }}
+                   whileTap={{ scale: 0.9 }}>
                   <BsTwitter className='w-5 h-5 mt-0.5'/>
-                  </a>
-                </div>
+                  </motion.a>
+                </motion.div>
 
-                <div className='shadow-lg px-2 py-2 ml-1'>
-                  <a>
+                <motion.div 
+                   whileHover={{ y: -6 }}
+                   whileTap={{ scale: 0.9 }}
+                className='shadow-lg rounded-md bg-white text-[#264c72] px-2 py-2 ml-1'>
+                  <motion.a
+                   whileHover={{ y: -6 }}
+                   whileTap={{ scale: 0.9 }}>
                   <FaLinkedinIn className='w-5 h-5 mt-0.5'/>
-                  </a>
-                </div>
+                  </motion.a>
+                </motion.div>
 
-                <div className='shadow-lg px-2 py-2 ml-1'>
-                  <a>
+                <motion.div
+                   whileHover={{ y: -6 }}
+                   whileTap={{ scale: 0.9 }}
+                 className='shadow-lg rounded-md bg-white text-red-600 px-2 py-2 ml-1'>
+                  <motion.a
+                   whileHover={{ y: -6 }}
+                   whileTap={{ scale: 0.9 }}>
                   <AiFillYoutube className='w-5 h-5 mt-0.5'/>
-                  </a>
-                </div>
+                  </motion.a>
+                </motion.div>
               </motion.div>
             </div>
             

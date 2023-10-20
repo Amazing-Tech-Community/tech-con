@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/faviconn.ico" />
         <link
           rel="stylesheet"
-          href="/SF-Text-Medium.otf" 
+          href="/fonts/SF-Text-Medium.otf" 
           as="font"
           type="font/otf"
           crossOrigin="anonymous"

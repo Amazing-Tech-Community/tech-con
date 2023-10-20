@@ -1,4 +1,9 @@
 import React from 'react'
+import { FaFacebookF} from 'react-icons/fa';
+import { BsTwitter} from 'react-icons/bs';
+import { FaLinkedinIn} from 'react-icons/fa';
+import { AiFillYoutube} from 'react-icons/ai';
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
@@ -10,11 +15,57 @@ const Footer = () => {
 Interested in the industry.
 
       </p>
-{/* 
-      <h1 className='text-md py-3 flex flex-row '>Organized by 
-      <b className='text-[#ffd100] px-1'>ATC Africa</b> Powered by
-       <b className='text-[#ffd100] px-1'>TecHappen</b>
-      </h1> */}
+
+
+      <motion.div 
+               initial={{ y: 200 }} 
+               animate={{ y: 0 }}     
+               transition={{ delay: 0.8, duration: 1.5}}
+              className='flex flex-row justify-center text-[#1e1e1e] items-center px-5 py-5'>
+                <motion.div 
+                   whileHover={{ y: -6 }}
+                   whileTap={{ scale: 0.9 }}
+                className='px-2 py-2 rounded-md bg-white text-[#264c72] shadow-lg'>
+                  <motion.a
+                   whileHover={{ y: -6 }}
+                   whileTap={{ scale: 0.9 }}>
+                  <FaFacebookF className='w-5 h-5 mt-0.5'/>
+                  </motion.a>
+                </motion.div>
+
+                <motion.div 
+                   whileHover={{ y: -6 }}
+                   whileTap={{ scale: 0.9 }}
+                className='shadow-lg rounded-md bg-white text-[#264c72] px-2 py-2 ml-1'>
+                  <motion.a
+                   whileHover={{ y: -6 }}
+                   whileTap={{ scale: 0.9 }}>
+                  <BsTwitter className='w-5 h-5 mt-0.5'/>
+                  </motion.a>
+                </motion.div>
+
+                <motion.div 
+                   whileHover={{ y: -6 }}
+                   whileTap={{ scale: 0.9 }}
+                className='shadow-lg rounded-md bg-white text-[#264c72] px-2 py-2 ml-1'>
+                  <motion.a
+                   whileHover={{ y: -6 }}
+                   whileTap={{ scale: 0.9 }}>
+                  <FaLinkedinIn className='w-5 h-5 mt-0.5'/>
+                  </motion.a>
+                </motion.div>
+
+                <motion.div
+                   whileHover={{ y: -6 }}
+                   whileTap={{ scale: 0.9 }}
+                 className='shadow-lg rounded-md bg-white text-red-600 px-2 py-2 ml-1'>
+                  <motion.a
+                   whileHover={{ y: -6 }}
+                   whileTap={{ scale: 0.9 }}>
+                  <AiFillYoutube className='w-5 h-5 mt-0.5'/>
+                  </motion.a>
+                </motion.div>
+              </motion.div>
 
       <div className='flex flex-row sm:justify-center py-2'>
         <h1>Organized by </h1>
