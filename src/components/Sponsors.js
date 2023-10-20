@@ -10,7 +10,7 @@ const Sponsors = () => {
         <div className='flex flex-col  py-8'>
 
             <div className='flex justify-center'>
-            <h1 className="text-green font-bold">
+            <h1 className="text-green py-4 font-bold">
                 <b className="text-white font-bold text-3xl">Sponsors</b>
             </h1>
             </div>

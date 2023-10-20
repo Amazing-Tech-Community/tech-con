@@ -68,10 +68,10 @@ Interested in the industry.
               </motion.div>
 
       <div className='flex flex-row sm:justify-center py-2'>
-        <h1>Organized by </h1>
-        <h1 className='text-[#ffd100] px-1'>ATC Africa </h1>
+        <h1 className=''>Organized by </h1>
+        <h1 className='text-[#ffd100] px-0.5'>ATC Africa </h1>
         <h1> Powered by </h1>
-        <h1 className='text-[#ffd100] px-1'>TecHappen </h1>
+        <h1 className='text-[#ffd100] px-0.5'>TecHappen </h1>
       </div>
     
       <h1 className=' py-3 flex px-3 justify-center xx:text-center'>© 2024 Tech Starters Conference. All Rights Reserved. </h1>

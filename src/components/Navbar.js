@@ -45,7 +45,7 @@ const Navbar = () => {
         <Image
           src={logo}
           alt="logo"
-          className="w-[113px] h-14 sm:w-full xx:p-1 sm:p-2 sm:h-12 object-cover object-center "
+          className="w-full h-14 sm:w-full xx:py-1  xx:px-2 sm:p-2 sm:h-12 object-cover object-center "
         />
         {/* <div className='text-[#ffd100] px-3 visible sm:hidden font-bold ml-1 '>
           <h1 className='text-md sm:text-2xl'>TECH STARTERS CONF 24</h1>

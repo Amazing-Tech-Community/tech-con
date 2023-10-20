@@ -10,6 +10,7 @@ import Hero from "@/components/Hero";
 // import Pics from "@/components/Pics";
 import Faq from "@/components/Faq";
 import Sponsors from "@/components/Sponsors";
+import Team from "@/components/Team";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
           <SectionFour />
           <SectionFive />
           <SectionSix />
+          <Team />
           <Sponsors />
           {/* <Pics /> */}
           <Faq />

@@ -12,7 +12,7 @@ const SectionSix = () => {
        <div className="absolute inset-0 flex flex-col justify-center bg-gradient-to-r from-[#07031c9b] to-[#07031caa] bg-opacity-10 transition-all duration-300 hover:bg-opacity-40 py-12 sm:px-6 px-2 ">
        </div>
 
-    <h1 className='text-white text-4xl font-semibold capitalize z-10'>
+    <h1 className='text-white sm:text-4xl xx:text-2xl font-semibold capitalize z-10'>
       Event Speakers
     </h1>
 
