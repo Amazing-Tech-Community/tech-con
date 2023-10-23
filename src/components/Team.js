@@ -7,10 +7,8 @@ import { BiLogoLinkedinSquare } from "react-icons/bi";
 
 const Team = () => {
     return (
-        <div className='py-24 px-14 flex flex-col '>
-            <h1 className='text-white sm:text-4xl xx:text-2xl font-semibold flex justify-center py-6 capitalize z-10'>
-                Team
-            </h1>
+        <div className='sm:py-24 px-6 flex flex-col '>
+         <AnimatedText text="Team" className='xx:text-4xl sm:text-4xl z-10 font-semibold  py-7 sm:py-8 sm:pt-14 ' />
 
            
 

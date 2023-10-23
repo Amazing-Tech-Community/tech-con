@@ -12,12 +12,12 @@ const SectionSix = () => {
   };
 
   return (
-    <div className="bg-[url('../images/spe.jpg')] bg-cover h-[500px] sm:p-20 xx:p-10 relative text-white flex flex-col items-center justify-center" style={backgroundImageStyle}>
+    <div className="bg-[url('../images/spe.jpg')] bg-cover sm:h-[500px] sm:p-20 xx:p-5 relative text-white flex flex-col items-center justify-center" style={backgroundImageStyle}>
        <div className="absolute inset-0 flex flex-col justify-center bg-gradient-to-r from-[#07031c9b] to-[#07031caa] bg-opacity-10 transition-all duration-300 hover:bg-opacity-40 py-16 sm:px-6 px-2 ">
        </div>
 
-<div className='py-6 z-10'>
-<AnimatedText text="Speakers" className='xx:text-4xl sm:text-4xl z-10 font-semibold py-8 pt-14 text-[#ffd100]' />
+<div className='sm:py-6 z-10'>
+<AnimatedText text="Speakers" className='xx:text-4xl sm:text-4xl z-10 font-semibold sm:py-8 sm:pt-14 ' />
 
 <div className='grid sm:grid-cols-3 py-6 xx:grid-cols-1 gap-2 z-10'>
   {speakers.map((speakers, index) => (
