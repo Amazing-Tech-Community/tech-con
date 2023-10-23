@@ -62,7 +62,7 @@ const Hero = () => {
                   <MdOutlineLocationOn className='w-6 h-6 text-[#ffd100] font-bold' />
 
                   <h1 className='px-2 flex text-xl text-[#ffd100] font-bold'>
-                    University of Ibadan
+                    Announcing soon
                   </h1>
 
 

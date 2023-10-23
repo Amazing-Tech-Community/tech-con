@@ -33,13 +33,13 @@ const SectionOne = () => {
   return (
     <div className='flex flex-col px-1 py-3 w-[100%] text-[#fafafa] '>
       <div className='w-[100%] flex flex-col'>
-        <p className='text-sm py-3 font-extrabold flex justify-center px-3 text-center leading-5'>
+        <p className='sm:text-xl xx:text-sm py-3 font-extrabold flex justify-center px-3 text-center leading-6'>
           Tech Starters Conference is designed to help individuals navigate the overwhelming world of technology and provide a clear direction for students, enthusiasts, career changers, tech beginners and anyone
           Interested in the industry.
 
         </p>
 
-        <div className='flex flex-row justify-center py-2 '>
+        {/* <div className='flex flex-row justify-center py-2 '>
           <VscCalendar className='w-6 h-6 text-[#ffd100]' />
 
           <h1 className='px-2 font-semibold'>When:</h1>
@@ -47,7 +47,7 @@ const SectionOne = () => {
             Sat 3rd February 2024
 
           </h1>
-        </div>
+        </div> */}
 
         <div className='w-[100%]  flex flex-col py-5'>
           <div>
@@ -62,7 +62,7 @@ const SectionOne = () => {
               <motion.div 
                
               className='bg-[#fafafa] transition-all duration-500  hover:rotate-1 hover:scale-80 text-[#1e1e1e]  rounded-md  shadow-md '>
-                <h1 className='py-2 font-extrabold flex justify-center bg-[#ffd100] text-lg'>Standard Ticket (#5000)</h1>
+                <h1 className='py-4 font-extrabold flex justify-center bg-[#ffd100] text-2xl'>Standard Ticket (#5000)</h1>
 
                 <ul className='text-sm py-1 px-4 font-semibold'>
                   <li className='py-1'>Everything is FREE </li>
@@ -93,11 +93,11 @@ const SectionOne = () => {
 
               <div className='bg-[#fafafa] transition-all duration-500 hover:rotate-2 hover:scale-80  text-[#1e1e1e] rounded-md shadow-md'>
                 <div className='bg-[#ffd100]'>
-                <h1 className='py-2 font-extrabold flex justify-center  text-lg'>Premium Ticket (N6000)</h1>
+                <h1 className='py-4 font-extrabold flex justify-center  text-2xl'>Premium Ticket (N6000)</h1>
                 </div>
                 
 
-                <ul className='list-none py-2 px-4 font-semibold'>
+                <ul className='list-none py-2 px-2 font-semibold'>
                   <li className='py-1' >Everything is Standard  </li>
                   <li className='py-1'>Free access to premium resources that will aid professional growth </li>
                   <li className='py-1'>One-on-one mentorship with industry experts</li>
@@ -107,7 +107,7 @@ const SectionOne = () => {
                 </ul>
 
                 <motion.div 
-                className='px-1 flex justify-center py-3'>
+                className='px-1 flex justify-center py-3 mt-5'>
                   <button className='flex justify-between flex-row hover:bg-[#1e1e1e] hover:text-white py-2 px-2 rounded-md shadow-md bg-[#ffd100] text-[#1e1e1e] '>
                     <h1 className='px-1'>
                       <a href='https://flutterwave.com/pay/cx17f9s2mjeg' target={'_blank'}> Get Ticket</a>
@@ -122,18 +122,18 @@ const SectionOne = () => {
 
 
               <div className='bg-[#fafafa] transition-all duration-500 hover:rotate-2 hover:scale-80 text-[#1e1e1e]  rounded-md shadow-md '>
-                <h1 className='py-2 font-extrabold text-lg flex justify-center bg-[#ffd100]'>Free Ticket</h1>
+                <h1 className='py-4 font-extrabold text-2xl flex justify-center bg-[#ffd100]'>Free Ticket</h1>
 
                 <ul className='list-none font-semibold py-1 px-2'>
-                  {/* <li className='py-1'>Access to the live stream and recorded event</li>
-                  <li className='py-1'>Access to a global community of black women in over 15 countries</li> */}
+                  <li className='py-1'>Access to the live stream and recorded event</li>
+                  <li className='py-1'>Online Swags</li>
 
-                  <h1 className='py-10 flex justify-center'>Coming Soon</h1>
+                  {/* <h1 className='py-10 flex justify-center'>Coming Soon</h1> */}
 
-                  <div className='px-1 flex justify-center py-3 mt-20'>
-                    <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-md bg-[#ffd100] hover:bg-[#1e1e1e] hover:text-white text-[#1e1e1e] '>
+                  <div className='px-1 flex justify-center py-3 mt-36'>
+                    <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-md bg-[#ffd100]  text-[#1e1e1e] ' disabled>
                       <h1 className='px-1'>
-                        <b> Get Ticket</b>
+                        <b>Coming Soon</b>
                       </h1>
 
                       <MdAddCircle className='w-5 h-5 mt-0.5 text-[#1e1e1e] hover:text-white' />

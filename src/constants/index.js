@@ -10,3 +10,43 @@ export const slides = [
    
 
   ];
+
+  export const team = [
+    {
+      name: "name",
+      role: "none",
+      img: "/place.jpg",
+    },
+    {
+      name: "name",
+      role: "none",
+      img: "/place.jpg",
+    },
+    {
+      name: "name",
+      role: "none",
+      img: "/place.jpg",
+    },
+   
+
+  ];
+
+  export const speakers = [
+    {
+      name: "name",
+      role: "none",
+      img: "/place.jpg",
+    },
+    {
+      name: "name",
+      role: "none",
+      img: "/place.jpg",
+    },
+    {
+      name: "name",
+      role: "none",
+      img: "/place.jpg",
+    },
+   
+
+  ];

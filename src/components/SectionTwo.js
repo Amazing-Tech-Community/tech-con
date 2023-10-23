@@ -5,7 +5,7 @@ import Image from 'next/image';
 const SectionTwo = () => {
   return (
     <div className='py-3 px-3 flex flex-col sm:flex-row '>
-     <div className='py-5 px-7 sm:mr-[-2rem] md:mr-[-2rem]'>
+     <div className='py-5 px-1 sm:mr-[-1rem] md:mr-[-1rem]'>
       <Image
               src={last}
               alt="img"
@@ -15,7 +15,7 @@ const SectionTwo = () => {
             />
       </div>
 
-      <div className='md:py-6 sm:px-5 sm xx:px-4 flex flex-col justify-center xx:w-full sm:w-[45%] bg-[#fafafa] rounded-md text-white shadow-md sm:ml-[-20px] md:mt-[32px] sm:mt-[26px] mb-[-10px] sm:mb-[-5px]'>
+      <div className='md:py-6 sm:px-5 sm xx:px-4 flex flex-col justify-center xx:w-full sm:w-[45%] bg-[#fafafa] rounded-md text-white shadow-md sm:ml-[-0px] md:mt-[32px] sm:mt-[26px] mb-[-10px] sm:mb-[-5px]'>
         <h1 className='sm:text-3xl xx:text-xl flex justify-start text-[#1e1e1e] font-bold py-3'>
         Last year was mind blowing
         </h1>
