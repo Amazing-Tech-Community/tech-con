@@ -62,14 +62,14 @@ const SectionOne = () => {
               <motion.div 
                
               className='bg-[#fafafa] transition-all duration-500  hover:rotate-1 hover:scale-80 text-[#1e1e1e]  rounded-md  shadow-md '>
-                <h1 className='py-4 font-extrabold flex justify-center bg-[#ffd100] text-2xl'>Standard Ticket (#5000)</h1>
+                <h1 className='py-4 font-extrabold flex justify-center bg-[#ffd100] text-2xl'>Standard Ticket (₦5000)</h1>
 
                 <ul className='text-sm py-1 px-4 font-semibold'>
                   <li className='py-1'>Everything is FREE </li>
                   <li className='py-1'>Participate in a workshop and get a certificate </li>
                   <li className='py-1'>Opportunity to participate in the event hackathon </li>
                   <li className='py-1'>Opportunity to pitch your Startup and win a financial grant </li>
-                  <li className='py-1'> Networking with diverse attendees </li>
+                  <li className='py-1'> Networking with diverse attendees </li>s
                   <li className='py-1'> Hear from seasoned industry speakers and experts </li>
 
                 </ul>
@@ -93,7 +93,7 @@ const SectionOne = () => {
 
               <div className='bg-[#fafafa] transition-all duration-500 hover:rotate-2 hover:scale-80  text-[#1e1e1e] rounded-md shadow-md'>
                 <div className='bg-[#ffd100]'>
-                <h1 className='py-4 font-extrabold flex justify-center  text-2xl'>Premium Ticket (N6000)</h1>
+                <h1 className='py-4 font-extrabold flex justify-center  text-2xl'>Premium Ticket (₦6000)</h1>
                 </div>
                 
 
