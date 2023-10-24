@@ -34,17 +34,17 @@ export const slides = [
   export const speakers = [
     {
       name: "name",
-      role: "none",
+      role: "role",
       img: "/place.jpg",
     },
     {
       name: "name",
-      role: "none",
+      role: "role",
       img: "/place.jpg",
     },
     {
       name: "name",
-      role: "none",
+      role: "role",
       img: "/place.jpg",
     },
    

@@ -1,47 +1,65 @@
-import React from 'react'
-import spe from "../images/spe.jpg";
-import AnimatedText from '../components/AnimatedText'
-import Link from 'next/link'
-import { speakers } from '@/constants'
-import Image from 'next/image'
-import { BiLogoLinkedinSquare } from "react-icons/bi";
+import React, { useState } from 'react';
+import spe from '../images/spe.jpg';
+import AnimatedText from '../components/AnimatedText';
+import Link from 'next/link';
+import { speakers } from '@/constants';
+import Image from 'next/image';
+import { BiLogoLinkedinSquare } from 'react-icons/bi';
+import { motion } from 'framer-motion';
 
 const SectionSix = () => {
-  const backgroundImageStyle = {
-    backgroundImage: `url(${spe})`,
-  };
+  const [hoveredSpeaker, setHoveredSpeaker] = useState(null);
 
   return (
-    <div className="bg-[url('../images/spe.jpg')] bg-cover sm:h-[500px] sm:p-20 xx:p-5 relative text-white flex flex-col items-center justify-center" style={backgroundImageStyle}>
-       <div className="absolute inset-0 flex flex-col justify-center bg-gradient-to-r from-[#07031c9b] to-[#07031caa] bg-opacity-10 transition-all duration-300 hover:bg-opacity-40 py-16 sm:px-6 px-2 ">
-       </div>
-
-<div className='sm:py-6 z-10'>
-<AnimatedText text="Speakers" className='xx:text-4xl sm:text-4xl z-10 font-semibold sm:py-8 sm:pt-14 ' />
-
-<div className='grid sm:grid-cols-3 py-6 xx:grid-cols-1 gap-2 z-10'>
-  {speakers.map((speakers, index) => (
-      <div className='flex flex-col justify-center rounded-lg shadow-md bg-white text-black' key={speakers}>
-          <div >
-              <Image src={speakers.img} alt="doc" width={300} height={200} className='w-[400px] h-[200px]' />
-          </div>
-          <div className='flex flex-col justify-center'> 
-              <h1 className='flex justify-center'>{speakers.name}</h1>
-              <h1  className='flex justify-center'>{speakers.role}</h1>
-              <Link href="" className='flex justify-center'>
-                  <BiLogoLinkedinSquare
-                      className=" my-2 text-[#0e76a8] transition-all duration-300 hover:text-[#006290] "
-                      size={25}
-                  />
-              </Link>
-          </div>
+    <div className="relative sm:h-[500px] sm:p-10 xx:p-5 flex flex-col items-center justify-center">
+      <div>
+        <AnimatedText text="Speakers" className='xx:text-4xl sm:text-4xl z-10 font-semibold  text-white' />
       </div>
-  ))}
-</div>
-</div>
-     
-    </div>
-  )
-}
 
-export default SectionSix
+      <div className="absolute inset-0 flex flex-col justify-center py-16 sm:px-6 px-2 "></div>
+
+      <div className="grid sm:grid-cols-3 py-6 xx:grid-cols-1 gap-2 z-10">
+        {speakers.map((speaker, index) => (
+          <div
+            className="relative overflow-hidden rounded-lg"
+            key={speaker.name}
+            onMouseEnter={() => setHoveredSpeaker(index)}
+            onMouseLeave={() => setHoveredSpeaker(null)}
+
+          >
+            <Image
+              src={speaker.img}
+              alt={speaker.name}
+              width={300}
+              height={350}
+              className={`w-[300px] h-[350px] cursor-pointer transform scale-100 transition-transform duration-300 ${hoveredSpeaker === index ? 'scale-105' : ''
+                }`}
+            />
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: hoveredSpeaker === index ? 0.8 : 0 }}
+              transition={{ duration: 0.3 }}
+              className={`absolute inset-0 flex flex-row items-end py-3 cursor-pointer  bg-[#ffd100] text-black font-bold text-xl  opacity-1`}
+            >
+              <div className='px-10'>
+                <h1 className="text-xl font-bold mb-2">{speaker.name}</h1>
+              </div>
+
+
+              <div className='flex justify-end text-right pl-8 flex-col'>
+                <p className='py-1 '>{speaker.role}</p>
+                <a href={speaker.linkedin} className='flex justify-center'>
+                  <BiLogoLinkedinSquare className="text-[#0e76a8] hover:text-[#006290]" size={25} />
+                </a>
+              </div>
+
+            </motion.div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default SectionSix;
