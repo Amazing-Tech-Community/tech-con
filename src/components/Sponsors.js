@@ -17,7 +17,7 @@ const Sponsors = () => {
             </div>
           
 
-            {/* <div className='flex flex-row justify-center py-8'>
+            <div className='flex flex-row bg-white rounded-lg justify-center py-8'>
                 <div className='px-3'>
                     <Image
                         src={pinkApp}
@@ -57,11 +57,11 @@ const Sponsors = () => {
                         className=""
                     />
                 </div>
-            </div>  */}
+            </div> 
 
-            <div>
+            {/* <div>
                 <AnimatedText text="Coming Soon" className='xx:text-4xl sm:text-4xl z-10 font-bold  text-[#ffd100]' />
-            </div>
+            </div> */}
 
         </div>
     )

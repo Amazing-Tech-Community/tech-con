@@ -11,13 +11,13 @@ function Speakers() {
     const [hoveredSpeaker, setHoveredSpeaker] = useState(null);
     return (
         <div className="relative sm:h-[500px] sm:p-20 xx:p-5 flex flex-col items-center justify-center">
-            <div>
+            {/* <div>
                 <AnimatedText text="Speakers" className='xx:text-4xl sm:text-4xl z-10 font-semibold  text-white' />
-            </div>
+            </div> */}
 
             <div className="absolute inset-0 flex flex-col justify-center py-10 sm:px-6 px-2 "></div>
 
-            <div className="grid sm:grid-cols-3 py-6 xx:grid-cols-1 gap-2 z-10">
+            {/* <div className="grid sm:grid-cols-3 py-6 xx:grid-cols-1 gap-2 z-10">
                 {speakers.map((speaker, index) => (
                     <div
                         className="relative overflow-hidden rounded-lg "
@@ -55,6 +55,10 @@ function Speakers() {
                         </motion.div>
                     </div>
                 ))}
+            </div> */}
+
+            <div>
+                <AnimatedText text="Coming Soon" className='xx:text-4xl sm:text-4xl z-10 font-semibold  text-white' />
             </div>
         </div>
     )

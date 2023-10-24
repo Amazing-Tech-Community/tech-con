@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import AnimatedText from '../components/AnimatedText'
 import Link from 'next/link'
 import { team } from '@/constants'
@@ -10,13 +10,13 @@ const Team = () => {
     const [hoveredSpeaker, setHoveredSpeaker] = useState(null);
     return (
         <div className="relative sm:h-[500px] sm:p-20 xx:p-5 flex flex-col items-center justify-center">
-            <div>
+            {/* <div>
             <AnimatedText text="Meet The Team" className='xx:text-4xl sm:text-4xl z-10 font-semibold  text-white' />
-            </div>
-           
-        <div className="absolute inset-0 flex flex-col justify-center  py-16 sm:px-6 px-2 "></div>
-  
-        <div className="grid sm:grid-cols-3 py-10 xx:grid-cols-1 gap-2 z-10">
+            </div> */}
+
+            <div className="absolute inset-0 flex flex-col justify-center  py-16 sm:px-6 px-2 "></div>
+
+            {/* <div className="grid sm:grid-cols-3 py-10 xx:grid-cols-1 gap-2 z-10">
           {team.map((team, index) => (
             <div
               className="relative overflow-hidden rounded-lg "
@@ -54,8 +54,12 @@ const Team = () => {
               </motion.div>
             </div>
           ))}
+        </div> */}
+
+            <div>
+                <AnimatedText text="Coming Soon" className='xx:text-4xl sm:text-4xl z-10 font-semibold  text-white' />
+            </div>
         </div>
-      </div>
     )
 }
 
