@@ -38,7 +38,7 @@ const Footer = () => {
         </motion.a>
 
         <motion.a
-        href='https://twitter.com/atcafricahq' target={'_blank'}
+          href='https://twitter.com/atcafricahq' target={'_blank'}
           whileHover={{ y: -6 }}
           whileTap={{ scale: 0.9 }}
           className='shadow-lg rounded-md bg-white text-[#264c72] px-2 py-2 ml-1'>
@@ -50,7 +50,7 @@ const Footer = () => {
         </motion.a>
 
         <motion.a
-        href='http://www.linkedin.com/company/atcafricahq' target={'_blank'}
+          href='http://www.linkedin.com/company/atcafricahq' target={'_blank'}
           whileHover={{ y: -6 }}
           whileTap={{ scale: 0.9 }}
           className='shadow-lg rounded-md bg-white text-[#264c72] px-2 py-2 ml-1'>
@@ -62,7 +62,7 @@ const Footer = () => {
         </motion.a>
 
         <motion.a
-        href='https://www.instagram.com/atcafricahq/' target={'_blank'}
+          href='https://www.instagram.com/atcafricahq/' target={'_blank'}
           whileHover={{ y: -6 }}
           whileTap={{ scale: 0.9 }}
           className='shadow-lg rounded-md bg-white text-red-600  ml-1'>
@@ -82,9 +82,16 @@ const Footer = () => {
 
       <div className='flex flex-row sm:justify-center py-2'>
         <h1 className=''>Organized by </h1>
-        <h1 className='text-[#ffd100] px-0.5'>ATC Africa </h1>
+
+        <a href='https://atcafrica.com' target={'_blank'}>
+          <h1 className='text-[#ffd100] px-0.5'>ATC Africa </h1>
+        </a>
+
         <h1> Powered by </h1>
+        <a href='http://techappen.com.ng' target={'_blank'}>
         <h1 className='text-[#ffd100] px-0.5'>TecHappen </h1>
+        </a>
+      
       </div>
 
       <h1 className=' py-3 flex px-3 justify-center xx:text-center'>© 2024 Tech Starters Conference. All Rights Reserved. </h1>
