@@ -1,5 +1,5 @@
 import React from 'react'
-import pinkApp from "../images/1App.png";
+import pinkApp from "../images/app.png";
 import cardify from "../images/cardify.png";
 import te from "../images/te.png";
 import techappen from "../images/techappen.png";
