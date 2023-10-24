@@ -21,10 +21,13 @@ const SectionFour = () => {
        <h1 className='pt-3 sm:pt-12 text-white font-bold z-10'>Then Sign up for Hackathon</h1>
 
        <div className='px-1 flex justify-center pt-7 pb-3 z-10'>
-        <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-sm shadow-black bg-[#ffd100] text-[#1e1e1e] '>
-        <h1 className='px-1'>
+        <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-sm shadow-black bg-[#ffd100] text-[#1e1e1e] hover:bg-[#1e1e1e] hover:border-2 hover:border-[#ffd100] hover:text-[#ffd100] '>
+        
+          <a href='https://docs.google.com/forms/d/e/1FAIpQLSfteKt4tukk2wF7QPNd2lKa2D7c-hBeikcIk9BP7a-XRUhdrA/viewform' target={'_blank'}>
+          <h1 className='px-1 font-bold '>
           Signup
           </h1> 
+          </a>
 
         {/* <MdAddCircle className='w-5 h-5 mt-0.5 text-white'/> */}
 
