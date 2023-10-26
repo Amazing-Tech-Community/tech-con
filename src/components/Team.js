@@ -11,7 +11,7 @@ const Team = () => {
     return (
         <div className="relative sm:h-[500px] sm:p-10 xx:p-5 flex flex-col items-center justify-center">
             <div>
-            <AnimatedText text="Team" className='xx:text-4xl sm:text-4xl z-10 font-semibold  text-white' />
+            <AnimatedText text="Team (coming soon)" className='xx:text-4xl sm:text-4xl z-10 font-semibold  text-white' />
             </div>
            
         <div className="absolute inset-0 flex flex-col justify-center  py-16 sm:px-6 px-2 "></div>

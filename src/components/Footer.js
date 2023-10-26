@@ -88,7 +88,7 @@ const Footer = () => {
         </a>
 
         <h1> Powered by </h1>
-        <a href='http://techappen.com.ng' target={'_blank'}>
+        <a href='http://techappen.com' target={'_blank'}>
         <h1 className='text-[#ffd100] px-0.5'>TecHappen </h1>
         </a>
       
