@@ -62,14 +62,14 @@ const SectionOne = () => {
               <motion.div 
                
               className='bg-[#fafafa] transition-all duration-500  hover:rotate-1 hover:scale-80 text-[#1e1e1e]  rounded-md  shadow-md '>
-                <h1 className='py-4 font-extrabold flex justify-center bg-[#ffd100] text-2xl'>Standard Ticket (₦5000)</h1>
+                <h1 className='py-4 font-extrabold flex justify-center bg-[#ffd100] text-2xl'>Standard Ticket (₦4000)</h1>
 
                 <ul className='text-sm py-1 px-4 font-semibold'>
                   <li className='py-1'>Everything is FREE </li>
                   <li className='py-1'>Participate in a workshop and get a certificate </li>
                   <li className='py-1'>Opportunity to participate in the event hackathon </li>
                   <li className='py-1'>Opportunity to pitch your Startup and win a financial grant </li>
-                  <li className='py-1'> Networking with diverse attendees </li>s
+                  <li className='py-1'> Networking with diverse attendees </li>
                   <li className='py-1'> Hear from seasoned industry speakers and experts </li>
 
                 </ul>
@@ -77,9 +77,9 @@ const SectionOne = () => {
                 <motion.div 
                   whileHover={{ y: -4 }}
                   whileTap={{ scale: 0.9 }}
-                className='px-1 flex justify-center py-3'>
+                className='px-1 flex justify-center py-3 '>
                   <button className='flex justify-between hover:bg-[#1e1e1e] hover:text-white flex-row  py-2 px-2 rounded-md shadow-md bg-[#ffd100] text-[#1e1e1e] '>
-                    <h1 className='px-1'>
+                    <h1 className='px-1 font-bold'>
                       <a href='https://flutterwave.com/pay/iyow2gis3ep8' target={'_blank'}> Get Ticket</a>
                     </h1>
 
@@ -107,9 +107,9 @@ const SectionOne = () => {
                 </ul>
 
                 <motion.div 
-                className='px-1 flex justify-center py-3 mt-5'>
+                className='px-1 flex justify-center py-3 mt-7'>
                   <button className='flex justify-between flex-row hover:bg-[#1e1e1e] hover:text-white py-2 px-2 rounded-md shadow-md bg-[#ffd100] text-[#1e1e1e] '>
-                    <h1 className='px-1'>
+                    <h1 className='px-1 font-bold'>
                       <a href='https://flutterwave.com/pay/cx17f9s2mjeg' target={'_blank'}> Get Ticket</a>
                     </h1>
 
@@ -130,7 +130,7 @@ const SectionOne = () => {
 
                   {/* <h1 className='py-10 flex justify-center'>Coming Soon</h1> */}
 
-                  <div className='px-1 flex justify-center py-3 mt-36'>
+                  <div className='px-1 flex justify-center py-3 mt-40'>
                     <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-md bg-[#ffd100]  text-[#1e1e1e] ' disabled>
                       <h1 className='px-1'>
                         <b>Coming Soon</b>
