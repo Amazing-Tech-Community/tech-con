@@ -11,6 +11,7 @@ import Hero from "@/components/Hero";
 import Faq from "@/components/Faq";
 import Sponsors from "@/components/Sponsors";
 import Team from "@/components/Team";
+import NewsletterForm from "@/components/NewsletterForm";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
           <Sponsors />
           {/* <Pics /> */}
           <Faq />
+          {/* <NewsletterForm /> */}
         </Layout>
       </main>
     </>

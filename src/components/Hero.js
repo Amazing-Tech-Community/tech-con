@@ -62,7 +62,7 @@ const Hero = () => {
                   <MdOutlineLocationOn className='w-6 h-6 text-[#ffd100] font-bold' />
 
                   <h1 className='px-2 flex text-xl text-[#ffd100] font-bold'>
-                    Announcing soon
+                    Trenchard Hall, University of Ibadan, Ibadan
                   </h1>
 
 
