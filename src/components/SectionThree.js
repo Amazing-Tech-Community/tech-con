@@ -7,7 +7,7 @@ const SectionThree = () => {
 
       <div className='md:px-[15rem] xx:px-[10px] flex py-3 justify-center'>
       <iframe
-          src="/techvid.mp4"
+          src="/Tech.mp4"
           title="Video Player"
           frameborder="0"
           allowfullscreen
