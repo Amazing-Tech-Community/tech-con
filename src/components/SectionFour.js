@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import join from "../images/join.jpg";
 // import {MdOutlineLocationOn } from 'react-icons/md';
 
@@ -37,7 +37,7 @@ const SectionFour = () => {
         onMouseLeave={closeDropdown}
       >
         <button
-          className=" focus:outline-none py-2 px-2 rounded-md shadow-sm shadow-black bg-[#ffd100] text-[#1e1e1e] hover:bg-[#1e1e1e] hover:border-2 hover:border-[#ffd100] hover:text-[#ffd100]" 
+          className=" focus:outline-none py-2 px-2 rounded-md shadow-sm shadow-black bg-[#ffd100] text-[#1e1e1e] hover:bg-[#1e1e1e] hover:border-2 hover:border-[#ffd100] hover:text-[#ffd100]"
         >
           Signup
         </button>
@@ -45,7 +45,7 @@ const SectionFour = () => {
         {isDropdownOpen && (
           <div className="absolute left-0 mt-0 z-10 space-y-2 bg-[#ffd100] text-black border rounded-md shadow-lg">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfteKt4tukk2wF7QPNd2lKa2D7c-hBeikcIk9BP7a-XRUhdrA/viewform"
+              href="https://forms.gle/uuC64rrChzZDj9gC6"
               target="_blank"
               className="block px-4 py-2  text-md font-semibold hover:bg-gray-100"
             >
@@ -53,7 +53,7 @@ const SectionFour = () => {
             </a>
 
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSe1NxmW8GBnltA56upnjr555pUbWbAAYdx-F5mv7oCV9JF3sg/viewform?usp=sf_link"
+              href="https://bit.ly/TechStacon_CTF"
               target="_blank"
               className="block px-4 py-2 text-md font-semibold hover:bg-gray-100"
             >
