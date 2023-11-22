@@ -32,10 +32,26 @@ const AnimatedNumbers = ({ value }) => {
 const SectionOne = () => {
   return (
     <div className='flex flex-col px-1 py-3 w-[100%] text-[#fafafa] '>
-      <div className='w-[100%] flex flex-col'>
-        <p className='sm:text-xl xx:text-sm py-3 font-extrabold flex justify-center px-3 text-center leading-6'>
-          Tech Starters Conference is designed to help individuals navigate the overwhelming world of technology and provide a clear direction for students, enthusiasts, career changers, tech beginners and anyone
-          Interested in the industry.
+      <div className='w-[100%] flex flex-col justify-center'>
+      <motion.h1
+            initial={{ y: -30 }}
+            animate={{ y: 0 }}
+            transition={{ delay: 0.8, duration: 2 }}
+            className='font-bold text-4xl flex justify-center text-[#ffd100] py-5'>About TSC 24.</motion.h1>
+
+        <p className='sm:text-2xl xx:text-sm py-3 font-extrabold flex flex-col justify-center px-3 text-center leading-loose'>
+
+          Tech Starters Conference is the ATC Africa annual Conference!
+          Which aims is designed to help individuals and community members
+          to navigate the overwhelming world of technology and provide a clear
+          direction for students, enthusiasts, career changers, tech beginners and
+          anyone Interested in the industry as this conference.
+
+          Tech Starters Conference is a completely physical event.
+          Seasoned professionals can stay updated on industry trends, connect
+          with peers, and share their expertise. Overall, also we believe this will
+          foster a sense of community and collaboration among individuals
+          passionate about technology.
 
         </p>
 
@@ -61,20 +77,20 @@ const SectionOne = () => {
 
               <motion.div
 
-                className='bg-[#fafafa]  flex flex-col justify-between transition-all duration-500  hover:rotate-1 hover:scale-80 text-[#1e1e1e]  rounded-md  shadow-md '>
+                className='bg-[#fafafa]  flex flex-col justify-between transition-all duration-500  hover:rotate-1 hover:scale-80 text-[#1e1e1e]  rounded-lg  shadow-md '>
                 <h1 className='py-4 font-extrabold flex justify-center bg-[#ffd100] text-2xl'>Standard Ticket (₦4000)</h1>
 
-              <div>
-              <ul className='text-sm py-1 px-4 font-semibold'>
-                  <li className='py-1'>Everything is FREE </li>
-                  <li className='py-1'>Participate in a workshop and get a certificate </li>
-                  <li className='py-1'>Opportunity to participate in the event hackathon </li>
-                  <li className='py-1'>Opportunity to pitch your Startup and win a financial grant </li>
-                  <li className='py-1'> Networking with diverse attendees </li>
-                  <li className='py-1'> Hear from seasoned industry speakers and experts </li>
+                <div>
+                  <ul className='text-sm py-1 px-4 font-semibold'>
+                    <li className='py-1'>Everything is FREE </li>
+                    <li className='py-1'>Participate in a workshop and get a certificate </li>
+                    <li className='py-1'>Opportunity to participate in the event hackathon </li>
+                    <li className='py-1'>Opportunity to pitch your Startup and win a financial grant </li>
+                    <li className='py-1'> Networking with diverse attendees </li>
+                    <li className='py-1'> Hear from seasoned industry speakers and experts </li>
 
-                </ul>
-              </div>
+                  </ul>
+                </div>
 
                 <motion.div
                   whileHover={{ y: -4 }}
@@ -93,7 +109,7 @@ const SectionOne = () => {
 
               </motion.div>
 
-              <div className='bg-[#fafafa] flex flex-col justify-between transition-all duration-500 hover:rotate-2 hover:scale-80  text-[#1e1e1e] rounded-md shadow-md'>
+              <div className='bg-[#fafafa] flex flex-col justify-between transition-all duration-500 hover:rotate-2 hover:scale-80  text-[#1e1e1e] rounded-lg shadow-md'>
                 <div className='bg-[#ffd100]'>
                   <h1 className='py-4 font-extrabold flex justify-center  text-2xl'>Premium Ticket (₦6000)</h1>
                 </div>
@@ -125,31 +141,31 @@ const SectionOne = () => {
 
 
 
-              <div className='bg-[#fafafa] flex flex-col justify-between transition-all duration-500 hover:rotate-2 hover:scale-80 text-[#1e1e1e]  rounded-md shadow-md '>
+              <div className='bg-[#fafafa] flex flex-col justify-between transition-all duration-500 hover:rotate-2 hover:scale-80 text-[#1e1e1e]  rounded-lg shadow-md '>
                 <h1 className='py-4 font-extrabold text-2xl flex justify-center bg-[#ffd100]'>Free Ticket</h1>
 
-            <div>
-            <ul className='list-none font-semibold py-1 px-2'>
-                  <li className='py-1'>Access to the live stream and recorded event</li>
-                  <li className='py-1'>Online Swags</li>
+                <div>
+                  <ul className='list-none font-semibold py-1 px-2'>
+                    <li className='py-1'>Access to the live stream and recorded event</li>
+                    <li className='py-1'>Online Swags</li>
 
-                  {/* <h1 className='py-10 flex justify-center'>Coming Soon</h1> */}
+                    {/* <h1 className='py-10 flex justify-center'>Coming Soon</h1> */}
 
 
-                </ul>
-            </div>
+                  </ul>
+                </div>
 
-                
+
                 <div className='px-1 flex justify-center py-3 mt-40'>
-                    <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-md bg-[#ffd100]  text-[#1e1e1e] ' disabled>
-                      <h1 className='px-1'>
-                        <b>Coming Soon</b>
-                      </h1>
+                  <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-md bg-[#ffd100]  text-[#1e1e1e] ' disabled>
+                    <h1 className='px-1'>
+                      <b>Coming Soon</b>
+                    </h1>
 
-                      <MdAddCircle className='w-5 h-5 mt-0.5 text-[#1e1e1e] hover:text-white' />
+                    <MdAddCircle className='w-5 h-5 mt-0.5 text-[#1e1e1e] hover:text-white' />
 
-                    </button>
-                  </div>
+                  </button>
+                </div>
 
 
               </div>

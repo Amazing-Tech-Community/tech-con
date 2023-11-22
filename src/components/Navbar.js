@@ -34,8 +34,17 @@ const Navbar = () => {
     };
   }, []);
 
+
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const openDropdown = () => {
+    setIsDropdownOpen(true);
+  };
+
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
   };
 
   return (
@@ -80,9 +89,44 @@ const Navbar = () => {
               <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Past Conference</button></div>
             </a>
 
-            <a href='https://docs.google.com/forms/d/e/1FAIpQLSfteKt4tukk2wF7QPNd2lKa2D7c-hBeikcIk9BP7a-XRUhdrA/viewform' target={'_blank'}>
+            {/* <a href='https://docs.google.com/forms/d/e/1FAIpQLSfteKt4tukk2wF7QPNd2lKa2D7c-hBeikcIk9BP7a-XRUhdrA/viewform' target={'_blank'}>
               <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Hackathon</button></div>
-            </a>
+            </a> */}
+
+            <div
+              className="relative group"
+              onMouseEnter={openDropdown}
+              onMouseLeave={closeDropdown}
+            >
+              <button
+                className="hover:text-[#ffd100] focus:outline-none"
+              >
+                Hackathon
+              </button>
+
+              {isDropdownOpen && (
+                <div className="absolute left-0 mt-0 z-10 space-y-2 bg-[#ffd100] text-black border rounded-md shadow-lg">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfteKt4tukk2wF7QPNd2lKa2D7c-hBeikcIk9BP7a-XRUhdrA/viewform"
+                    target="_blank"
+                    className="block px-4 py-2  text-md font-semibold hover:bg-gray-100"
+                  >
+                    Hackathon
+                  </a>
+
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSe1NxmW8GBnltA56upnjr555pUbWbAAYdx-F5mv7oCV9JF3sg/viewform?usp=sf_link"
+                    target="_blank"
+                    className="block px-4 py-2 text-md font-semibold hover:bg-gray-100"
+                  >
+                    CTF
+                  </a>
+
+                </div>
+              )}
+            </div>
+            {/* End Hackathon dropdown */}
+
 
             <a href='https://docs.google.com/forms/d/e/1FAIpQLSdLeOLeSEJfDde1QDlI91bRa4y9FkB3jSZRGxd8ORenOrzwbQ/viewform' target={'_blank'}>
               <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Volunteer</button></div>
@@ -122,9 +166,9 @@ const Navbar = () => {
       )}
 
       {isDesktopOpen && (
-        <div className='fixed top-0 left-0 w-screen px-3 z-10'>
+        <div className='fixed  top-0 left-0 w-screen px-3 z-20'>
           <AiOutlineCloseCircle
-            className='w-8 h-8 text-[#ffd100] cursor-pointer hover:w-9 hover:h-9 absolute top-4 right-16'
+            className='w-8 h-8 text-[#ffd100] cursor-pointer hover:w-9 hover:h-9 absolute top-4 right-14'
             onClick={() => setIsDesktopOpen(false)}
           />
           {/* Add your mobile navigation links here */}
@@ -139,7 +183,7 @@ const Navbar = () => {
 
             <div
 
-              className='pt-20 w-[30%] px-8 flex flex-col bg-white '>
+              className='pt-8 w-[30%] px-8 flex flex-col bg-white '>
               <motion.div
                 initial={{ y: 200 }}
                 animate={{ y: 0 }}
@@ -153,7 +197,7 @@ const Navbar = () => {
                   />
                 </div>
 
-                <div className='text-[#1e1e1e] py-3 pt-5 font-extrabold ml-1 '>
+                <div className='text-[#1e1e1e] py-3 pt-3 font-extrabold ml-1 '>
                   <h1 className='text-sm sm:text-base flex '>TECH STARTERS CONF 24</h1>
                 </div>
 
@@ -163,9 +207,14 @@ const Navbar = () => {
                 initial={{ y: 200 }}
                 animate={{ y: 0 }}
                 transition={{ delay: 0.8, duration: 1.5 }}
-                className='py-5 text-center text-[#1e1e1e]'>
-                Tech Starters Conference is designed to help individuals navigate the overwhelming world of technology and provide a clear direction for students, enthusiasts, career changers, tech beginners and anyone
-                Interested in the industry.
+                className='py-2 text-center text-[#1e1e1e]'>
+                Tech Starters Conference is the ATC Africa annual Conference!
+                Which aims is designed to help individuals and community members
+                to navigate the overwhelming world of technology and provide a clear
+                direction for students, enthusiasts, career changers, tech beginners and
+                anyone Interested in the industry as this conference.
+
+
               </motion.p>
 
               <motion.div
@@ -242,14 +291,14 @@ const Navbar = () => {
           initial={{ x: 1000 }}
           animate={{ x: 0 }}
           transition={{ delay: 0.1, duration: 1.4 }}
-          className='fixed top-0 left-0 w-screen h-[560px] bg-[#1e1e1e] z-10'>
+          className='fixed top-0 left-0 w-screen h-[560px] bg-[#1e1e1e] z-20'>
           <AiOutlineCloseCircle
             className='w-8 h-8 text-[#ffd100] cursor-pointer hover:w-9 hover:h-9 absolute top-4 right-10'
             onClick={() => setIsDropdownOpen(false)}
           />
           {/* Add your mobile navigation links here */}
           <div className='pt-20 block text-center justify-center text-2xl'>
-          <Link href='/About'>
+            <Link href='/About'>
               <div className='px-1 py-3'><button className=' hover:text-[#ffd100]'>About</button></div>
             </Link>
 
@@ -278,65 +327,65 @@ const Navbar = () => {
             </Link>
 
             <motion.div
-                initial={{ y: 30 }}
-                animate={{ y: 0 }}
-                transition={{ delay: 0.8, duration: 1.5 }}
-                className='flex flex-row justify-center text-[#1e1e1e] items-center px-5 py-5'>
-                <motion.a
+              initial={{ y: 30 }}
+              animate={{ y: 0 }}
+              transition={{ delay: 0.8, duration: 1.5 }}
+              className='flex flex-row justify-center text-[#1e1e1e] items-center px-5 py-5'>
+              <motion.a
 
-                  href='https://web.facebook.com/atcafricahq' target={'_blank'}
-                  whileHover={{ y: -6 }}
-                  whileTap={{ scale: 0.9 }}
-                  className='px-2 py-2 rounded-md bg-white text-[#264c72] shadow-lg'>
-                  <motion.a
-                    whileHover={{ y: -6 }}
-                    whileTap={{ scale: 0.9 }}>
-                    <FaFacebookF className='w-5 h-5 mt-0.5' />
-                  </motion.a>
-                </motion.a>
-
+                href='https://web.facebook.com/atcafricahq' target={'_blank'}
+                whileHover={{ y: -6 }}
+                whileTap={{ scale: 0.9 }}
+                className='px-2 py-2 rounded-md bg-white text-[#264c72] shadow-lg'>
                 <motion.a
-                  href='https://twitter.com/atcafricahq' target={'_blank'}
                   whileHover={{ y: -6 }}
-                  whileTap={{ scale: 0.9 }}
-                  className='shadow-lg rounded-md bg-white text-[#264c72] px-2 py-2 ml-3'>
-                  <motion.a
-                    whileHover={{ y: -6 }}
-                    whileTap={{ scale: 0.9 }}>
-                    <BsTwitter className='w-5 h-5 mt-0.5' />
-                  </motion.a>
+                  whileTap={{ scale: 0.9 }}>
+                  <FaFacebookF className='w-5 h-5 mt-0.5' />
                 </motion.a>
+              </motion.a>
 
+              <motion.a
+                href='https://twitter.com/atcafricahq' target={'_blank'}
+                whileHover={{ y: -6 }}
+                whileTap={{ scale: 0.9 }}
+                className='shadow-lg rounded-md bg-white text-[#264c72] px-2 py-2 ml-3'>
                 <motion.a
-                  href='http://www.linkedin.com/company/atcafricahq' target={'_blank'}
                   whileHover={{ y: -6 }}
-                  whileTap={{ scale: 0.9 }}
-                  className='shadow-lg rounded-md bg-white text-[#264c72] px-2 py-2 ml-3'>
-                  <motion.a
-                    whileHover={{ y: -6 }}
-                    whileTap={{ scale: 0.9 }}>
-                    <FaLinkedinIn className='w-5 h-5 mt-0.5' />
-                  </motion.a>
+                  whileTap={{ scale: 0.9 }}>
+                  <BsTwitter className='w-5 h-5 mt-0.5' />
                 </motion.a>
+              </motion.a>
 
+              <motion.a
+                href='http://www.linkedin.com/company/atcafricahq' target={'_blank'}
+                whileHover={{ y: -6 }}
+                whileTap={{ scale: 0.9 }}
+                className='shadow-lg rounded-md bg-white text-[#264c72] px-2 py-2 ml-3'>
                 <motion.a
-                  href='https://www.instagram.com/atcafricahq/' target={'_blank'}
                   whileHover={{ y: -6 }}
-                  whileTap={{ scale: 0.9 }}
-                  className='shadow-lg rounded-md bg-white text-red-600 mt-1  ml-3'>
-                  <motion.a
-                    whileHover={{ y: -6 }}
-                    whileTap={{ scale: 0.9 }}>
-                    <Image
-                      src={insta}
-                      alt="img"
-                      width={40}
-                      height={40}
-                      className="bg-transparent shadow-lg rounded-md"
-                    />
-                  </motion.a>
+                  whileTap={{ scale: 0.9 }}>
+                  <FaLinkedinIn className='w-5 h-5 mt-0.5' />
                 </motion.a>
-              </motion.div>
+              </motion.a>
+
+              <motion.a
+                href='https://www.instagram.com/atcafricahq/' target={'_blank'}
+                whileHover={{ y: -6 }}
+                whileTap={{ scale: 0.9 }}
+                className='shadow-lg rounded-md bg-white text-red-600 mt-1  ml-3'>
+                <motion.a
+                  whileHover={{ y: -6 }}
+                  whileTap={{ scale: 0.9 }}>
+                  <Image
+                    src={insta}
+                    alt="img"
+                    width={40}
+                    height={40}
+                    className="bg-transparent shadow-lg rounded-md"
+                  />
+                </motion.a>
+              </motion.a>
+            </motion.div>
           </div>
         </motion.div>
       )}

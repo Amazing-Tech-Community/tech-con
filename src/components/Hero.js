@@ -4,6 +4,7 @@ import { Carousel as Caro } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { slides } from '@/constants/index';
 import { motion } from "framer-motion";
+import Countdown from './Countdown';
 
 
 
@@ -58,14 +59,22 @@ const Hero = () => {
                 initial={{ y: 200 }} 
                 animate={{ y: 0 }}     
                 transition={{ delay: 0.8, duration: 2.4}}
-                className='flex flex-row items-center justify-center py-5 pt-10 '>
+                className='flex sm:flex-row xx:flex-col items-center justify-center py-4 sm:py-5 sm:pt-10 '>
                   <MdOutlineLocationOn className='w-6 h-6 text-[#ffd100] font-bold' />
 
-                  <h1 className='px-2 flex text-xl text-[#ffd100] font-bold'>
+                  <h1 className='px-2 flex sm:text-xl text-[#ffd100] font-bold'>
                     Trenchard Hall, University of Ibadan, Ibadan
                   </h1>
 
 
+                </motion.div>
+
+                <motion.div 
+                initial={{ y: 200 }} 
+                animate={{ y: 0 }}     
+                transition={{ delay: 0.8, duration: 2.4}}
+                className='pt-3'>
+                  <Countdown />
                 </motion.div>
 
               </div>
