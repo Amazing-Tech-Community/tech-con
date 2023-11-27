@@ -75,25 +75,36 @@ const Navbar = () => {
       ) : (
         // Desktop view with navigation links
         <div className='flex px-2 justify-between'>
-          <div className='flex flex-row  items-center sm:ml-[-6%] mt-2 sm:mt-0 space-x-2'>
+          <div className='flex flex-row justify-start items-center md:ml-[-0.5%] mt-2 sm:mt-0 space-x-2'>
 
             <Link href='/About'>
               <div className='px-1 '><button className=' hover:text-[#ffd100]'>About</button></div>
             </Link>
 
             <Link href='/Speakers'>
-              <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100] '>Speakers</button></div>
+              <div className='px-1 md:px-1'><button className=' hover:text-[#ffd100] '>Speakers</button></div>
             </Link>
 
             <a href='https://photos.google.com/share/AF1QipMbwsqlm7t6-LsuL8qvVJaUwMxImkulVG1Fq4SvUT_QuUVZfubHUfyMPnzDtjrHkQ?key=RlZ4NnozUVdSY1NCRWNpSGV6MXJlWVNheWN0S0pB' target={'_blank'}>
-              <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Past Conference</button></div>
+              <div className='px-1 md:px-1'><button className=' hover:text-[#ffd100]'>Past Conference</button></div>
             </a>
 
-            {/* <a href='https://docs.google.com/forms/d/e/1FAIpQLSfteKt4tukk2wF7QPNd2lKa2D7c-hBeikcIk9BP7a-XRUhdrA/viewform' target={'_blank'}>
-              <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Hackathon</button></div>
+            <a href='https://forms.gle/uuC64rrChzZDj9gC6' target={'_blank'}>
+              <div className='px-1 md:px-1'><button className=' hover:text-[#ffd100]'>Hackathon</button></div>
+            </a>
+
+            <Link href='/CTF'>
+              <div className='px-1 md:px-1'>
+                <button className=' hover:text-[#ffd100]'>
+                  CTF
+                </button>
+              </div>
+            </Link>
+            {/* <a href='https://bit.ly/TechStacon_CTF' target={'_blank'}>
+
             </a> */}
 
-            <div
+            {/* <div
               className="relative group"
               onMouseEnter={openDropdown}
               onMouseLeave={closeDropdown}
@@ -124,24 +135,28 @@ const Navbar = () => {
 
                 </div>
               )}
-            </div>
+            </div> */}
             {/* End Hackathon dropdown */}
 
 
             <a href='https://docs.google.com/forms/d/e/1FAIpQLSdLeOLeSEJfDde1QDlI91bRa4y9FkB3jSZRGxd8ORenOrzwbQ/viewform' target={'_blank'}>
-              <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Volunteer</button></div>
+              <div className='px-1 md:px-1'><button className=' hover:text-[#ffd100]'>Volunteer</button></div>
             </a>
 
             <Link href='/Team'>
-              <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Team</button></div>
+              <div className='px-1 md:px-1'><button className=' hover:text-[#ffd100]'>Team</button></div>
             </Link>
 
             <Link href='/Contact'>
-              <div className='px-1 md:px-2'><button className=' hover:text-[#ffd100]'>Contact</button></div>
+              <div className='px-1 md:px-1  '><button className=' hover:text-[#ffd100]'>Contact</button></div>
+            </Link>
+
+            <Link href='/Raffle'>
+              <div className='px-1 md:px-1  '><button className=' hover:text-[#ffd100]'>Raffle draw</button></div>
             </Link>
           </div>
 
-          <div className='flex items-center flex-row mt-2 sm:mt-0'>
+          <div className='flex items-center flex-row md:mr-[-2%] mt-2 sm:mt-0'>
             <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-sm bg-[#ffd100] text-[#1e1e1e] hover:bg-[#1e1e1e] hover:border-2 hover:border-[#ffd100] hover:text-[#ffd100]'>
               <a href='http://wa.me/2348123051357#' target={'_blank'} className='px-1'>
                 Sponsor Us
@@ -291,13 +306,13 @@ const Navbar = () => {
           initial={{ x: 1000 }}
           animate={{ x: 0 }}
           transition={{ delay: 0.1, duration: 1.4 }}
-          className='fixed top-0 left-0 w-screen h-[560px] bg-[#1e1e1e] z-20'>
+          className='fixed top-0 left-0 w-screen h-[610px] bg-[#1e1e1e] z-20'>
           <AiOutlineCloseCircle
             className='w-8 h-8 text-[#ffd100] cursor-pointer hover:w-9 hover:h-9 absolute top-4 right-10'
             onClick={() => setIsDropdownOpen(false)}
           />
           {/* Add your mobile navigation links here */}
-          <div className='pt-20 block text-center justify-center text-2xl'>
+          <div className='pt-12 block text-center justify-center text-2xl'>
             <Link href='/About'>
               <div className='px-1 py-3'><button className=' hover:text-[#ffd100]'>About</button></div>
             </Link>
@@ -310,9 +325,18 @@ const Navbar = () => {
               <div className='px-1 py-3 md:px-2'><button className=' hover:text-[#ffd100]'>Past Conference</button></div>
             </a>
 
-            <a href='https://docs.google.com/forms/d/e/1FAIpQLSfteKt4tukk2wF7QPNd2lKa2D7c-hBeikcIk9BP7a-XRUhdrA/viewform' target={'_blank'}>
+            <a href='https://forms.gle/uuC64rrChzZDj9gC6' target={'_blank'}>
               <div className='px-1 py-3 md:px-2'><button className=' hover:text-[#ffd100]'>Hackathon</button></div>
+
             </a>
+
+            <Link href='/CTF'>
+              <div className='px-1 py-3 md:px-2'>
+                <button className=' hover:text-[#ffd100]'>
+                  CTF
+                </button>
+              </div>
+            </Link>
 
             <a href='https://docs.google.com/forms/d/e/1FAIpQLSdLeOLeSEJfDde1QDlI91bRa4y9FkB3jSZRGxd8ORenOrzwbQ/viewform' target={'_blank'}>
               <div className='px-1 py-3 md:px-2'><button className=' hover:text-[#ffd100]'>Volunteer</button></div>
