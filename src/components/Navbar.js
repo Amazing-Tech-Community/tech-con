@@ -306,7 +306,7 @@ const Navbar = () => {
           initial={{ x: 1000 }}
           animate={{ x: 0 }}
           transition={{ delay: 0.1, duration: 1.4 }}
-          className='fixed top-0 left-0 w-screen h-[610px] bg-[#1e1e1e] z-20'>
+          className='fixed top-0 left-0 w-screen h-[630px] bg-[#1e1e1e] z-20'>
           <AiOutlineCloseCircle
             className='w-8 h-8 text-[#ffd100] cursor-pointer hover:w-9 hover:h-9 absolute top-4 right-10'
             onClick={() => setIsDropdownOpen(false)}
@@ -337,6 +337,15 @@ const Navbar = () => {
                 </button>
               </div>
             </Link>
+
+            <Link href='/Raffle'>
+              <div className='px-1 py-3 md:px-2'>
+                <button className=' hover:text-[#ffd100]'>
+                  Raffle Draw
+                </button>
+              </div>
+            </Link>
+
 
             <a href='https://docs.google.com/forms/d/e/1FAIpQLSdLeOLeSEJfDde1QDlI91bRa4y9FkB3jSZRGxd8ORenOrzwbQ/viewform' target={'_blank'}>
               <div className='px-1 py-3 md:px-2'><button className=' hover:text-[#ffd100]'>Volunteer</button></div>

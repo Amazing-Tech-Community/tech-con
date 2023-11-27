@@ -7,7 +7,7 @@ const SectionThree = () => {
 
       <div className='md:px-[15rem] xx:px-[10px] flex py-3 justify-center'>
       <iframe
-          src="https://www.youtube.com/watch?v=2610GaJpq6U"
+          src="https://youtu.be/2610GaJpq6U?si=d4Nbi5Go3SI80SO9"
           title="Video Player"
           frameborder="0"
           allowfullscreen
