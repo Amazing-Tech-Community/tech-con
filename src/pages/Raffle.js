@@ -31,7 +31,7 @@ const Raffle = () => {
 
             <div className='flex items-center flex-row mt-2 sm:mt-2'>
             <button className='flex flex-row  py-2 px-2 rounded-md shadow-sm bg-[#ffd100] text-[#1e1e1e] hover:bg-[#1e1e1e] hover:border-2 hover:border-[#ffd100] hover:text-[#ffd100]'>
-              <a href='' target={'_blank'} className='px-1 font-semibold'>
+              <a href='https://flutterwave.com/pay/thycrkdkv0ss' target={'_blank'} className='px-1 font-semibold'>
                Pay now
               </a>
             </button>
