@@ -75,7 +75,7 @@ const Navbar = () => {
       ) : (
         // Desktop view with navigation links
         <div className='flex px-2 justify-between'>
-          <div className='flex flex-row justify-start items-center md:ml-[-0.5%] mt-2 sm:mt-0 space-x-2'>
+          <div className='flex flex-row justify-start items-center md:ml-[-0.5%] lg:ml-[-18%] mt-2 sm:mt-0 space-x-2'>
 
             <Link href='/About'>
               <div className='px-1 '><button className=' hover:text-[#ffd100]'>About</button></div>
@@ -192,13 +192,13 @@ const Navbar = () => {
             animate={{ x: 0 }}
             transition={{ delay: 0.2, duration: 1 }}
             className='flex flex-row '>
-            <div className='p-20 bg-black z-0 w-[70%] h-[565px] opacity-70'>
+            <div className='p-20 bg-black z-0 w-[70%] h-[565px] lg:h-[660px] opacity-70'>
 
             </div>
 
             <div
 
-              className='pt-8 w-[30%] px-8 flex flex-col bg-white '>
+              className='pt-8 lg:pt-14 w-[30%] px-8 flex flex-col bg-white '>
               <motion.div
                 initial={{ y: 200 }}
                 animate={{ y: 0 }}
@@ -212,7 +212,7 @@ const Navbar = () => {
                   />
                 </div>
 
-                <div className='text-[#1e1e1e] py-3 pt-3 font-extrabold ml-1 '>
+                <div className='text-[#1e1e1e] py-3 pt-3 lg:pt-5 font-extrabold ml-1 '>
                   <h1 className='text-sm sm:text-base flex '>TECH STARTERS CONF 24</h1>
                 </div>
 

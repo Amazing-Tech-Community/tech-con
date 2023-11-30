@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const SectionTwo = () => {
   return (
-    <div className='py-3 px-3 flex flex-col sm:flex-row '>
+    <div className='py-3 px-3 flex justify-center flex-col sm:flex-row '>
      <div className='py-5 px-1 sm:mr-[-1rem] md:mr-[-1rem]'>
       <Image
               src={last}
