@@ -33,19 +33,58 @@ export const slides = [
 
   export const speakers = [
     {
-      name: "name",
-      role: "role",
-      img: "/place.jpg",
+      name: "Balogun Danjuma",
+      // role: "role",
+      img: "/Balogun.png",
+      linkedin: "https://www.linkedin.com/in/danjuma-balogun-887b261a7/",
     },
     {
-      name: "name",
-      role: "role",
-      img: "/place.jpg",
+      name: "David Adeleke",
+      // role: "role",
+      img: "/David.jpg",
+      linkedin: "https://www.linkedin.com/in/adelekedavid/",
     },
     {
-      name: "name",
-      role: "role",
-      img: "/place.jpg",
+      name: "Ebenezer Don",
+      // role: "role",
+      img: "/Ebener.png",
+      linkedin: "https://www.linkedin.com/in/ebenezerdon/",
+    },
+    {
+      name: "Hamzat Oluwaseun",
+      // role: "role",
+      img: "/Hamzat.png",
+      linkedin: "https://www.linkedin.com/in/oluwaseun-hamzat/",
+    },  
+    {
+      name: "Haneefah Abudurahman",
+      // role: "role",
+      img: "/Hannefat.jpg",
+      linkedin: "https://www.linkedin.com/in/haneefah-abdurrahman-lekki/",
+    },  
+    {
+      name: "Joshua Olajide",
+      // role: "role",
+      img: "/Joshua.png",
+      linkedin: "https://www.linkedin.com/in/joshtom/",
+    }, 
+     {
+      name: "Niyi Ibikoya",
+      // role: "role",
+      img: "/Niyi.jpg",
+      linkedin: "https://www.linkedin.com/in/ebenezerdon/",
+    },
+    {
+      name: "Oche Writer",
+      // role: "role",
+      img: "/Oche.png",
+      linkedin: "https://www.linkedin.com/in/ochewrites/",
+    },
+    {
+      name: "Victor Madu",
+      // role: "role",
+      img: "/Victor.png",
+      linkedin: "https://www.linkedin.com/in/thevictormadu/",
     },
    
 

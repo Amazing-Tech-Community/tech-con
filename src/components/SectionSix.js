@@ -11,14 +11,14 @@ const SectionSix = () => {
   const [hoveredSpeaker, setHoveredSpeaker] = useState(null);
 
   return (
-    <div className="relative sm:h-[500px] sm:p-10 xx:p-5 flex flex-col items-center justify-center">
+    <div className="relative  sm:p-10 xx:p-5 flex flex-col items-center justify-center">
       <div>
         <AnimatedText text="Speakers (coming soon)" className='xx:text-4xl sm:text-4xl z-10 font-semibold  text-white' />
       </div>
 
       <div className="absolute inset-0 flex flex-col justify-center py-16 sm:px-6 px-2 "></div>
 
-      <div className="grid sm:grid-cols-3 py-6 xx:grid-cols-1 gap-2 z-10">
+      <div className="grid sm:grid-cols-3 py-4 xx:grid-cols-1 gap-2 z-10">
         {speakers.map((speaker, index) => (
           <div
             className="relative overflow-hidden rounded-lg"
@@ -40,16 +40,15 @@ const SectionSix = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: hoveredSpeaker === index ? 0.8 : 0 }}
               transition={{ duration: 0.3 }}
-              className={`absolute inset-0 flex flex-row items-end py-3 cursor-pointer  bg-[#ffd100] text-black font-bold text-xl  opacity-1`}
+              className={`absolute inset-0 flex flex-row items-end py-3 cursor-pointer  bg-black text-black font-bold text-xl  opacity-1`}
             >
-              <div className='px-10'>
-                <h1 className="text-xl font-bold mb-2">{speaker.name}</h1>
+              <div className='px-4'>
+                <h1 className="text-xl font-bold text-[#ffd100] ">{speaker.name}</h1>
               </div>
 
 
-              <div className='flex justify-end text-right pl-8 flex-col'>
-                <p className='py-1 '>{speaker.role}</p>
-                <a href={speaker.linkedin} className='flex justify-center'>
+              <div className='flex px-4 flex-col'>
+                <a href={speaker.linkedin} className='flex '>
                   <BiLogoLinkedinSquare className="text-[#0e76a8] hover:text-[#006290]" size={25} />
                 </a>
               </div>

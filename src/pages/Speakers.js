@@ -10,14 +10,14 @@ import { motion } from 'framer-motion';
 function Speakers() {
     const [hoveredSpeaker, setHoveredSpeaker] = useState(null);
     return (
-        <div className="relative sm:h-[500px] sm:p-20 xx:p-5 flex flex-col items-center justify-center">
-            {/* <div>
+        <div className="relative sm:p-10 xx:p-5 flex flex-col items-center justify-center">
+            <div>
                 <AnimatedText text="Speakers" className='xx:text-4xl sm:text-4xl z-10 font-semibold  text-white' />
-            </div> */}
+            </div>
 
             <div className="absolute inset-0 flex flex-col justify-center py-10 sm:px-6 px-2 "></div>
 
-            {/* <div className="grid sm:grid-cols-3 py-6 xx:grid-cols-1 gap-2 z-10">
+            <div className="grid sm:grid-cols-3  py-6 rounded-lg xx:grid-cols-1 gap-2 z-10">
                 {speakers.map((speaker, index) => (
                     <div
                         className="relative overflow-hidden rounded-lg "
@@ -38,28 +38,28 @@ function Speakers() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: hoveredSpeaker === index ? 0.8 : 0 }}
                             transition={{ duration: 0.3 }}
-                            className={`absolute inset-0 flex flex-row items-end py-3 cursor-pointer  bg-[#ffd100] text-black font-bold text-xl  opacity-1`}
+                            className={`absolute inset-0 flex flex-row items-end py-3 cursor-pointer  bg-[#ffd100] text-black font-bold opacity-10 text-xl`}
                         >
-                            <div className='px-10'>
-                                <h1 className="text-xl font-bold mb-2">{speaker.name}</h1>
+                            <div className='px-5 '>
+                                <h1 className="text-xl font-bold ">{speaker.name}</h1>
                             </div>
 
 
-                            <div className='flex justify-end text-right pl-8 flex-col'>
-                                <p className='py-1 '>{speaker.role}</p>
+                            <div className='flex  pl-7 flex-col mt-[-2]'>
+                                {/* <p className='py-1 '>{speaker.role}</p> */}
                                 <a href={speaker.linkedin} className='flex justify-center'>
-                                    <BiLogoLinkedinSquare className="text-[#0e76a8] hover:text-[#006290]" size={25} />
+                                    <BiLogoLinkedinSquare className="text-[#0e76a8] hover:text-[#006290]" size={30} />
                                 </a>
                             </div>
 
                         </motion.div>
                     </div>
                 ))}
-            </div> */}
-
-            <div>
-                <AnimatedText text="Coming Soon" className='xx:text-4xl sm:text-4xl z-10 font-semibold  text-white' />
             </div>
+
+            {/* <div>
+                <AnimatedText text="Coming Soon" className='xx:text-4xl sm:text-4xl z-10 font-semibold  text-white' />
+            </div> */}
         </div>
     )
 }
