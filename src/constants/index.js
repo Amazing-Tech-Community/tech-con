@@ -33,22 +33,16 @@ export const slides = [
 
   export const speakers = [
     {
-      name: "Balogun Danjuma",
-      // role: "role",
-      img: "/Balogun.png",
-      linkedin: "https://www.linkedin.com/in/danjuma-balogun-887b261a7/",
-    },
-    {
       name: "David Adeleke",
       // role: "role",
       img: "/David.jpg",
       linkedin: "https://www.linkedin.com/in/adelekedavid/",
     },
     {
-      name: "Ebenezer Don",
+      name: "Balogun Danjuma",
       // role: "role",
-      img: "/Ebener.png",
-      linkedin: "https://www.linkedin.com/in/ebenezerdon/",
+      img: "/Balogun.png",
+      linkedin: "https://www.linkedin.com/in/danjuma-balogun-887b261a7/",
     },
     {
       name: "Hamzat Oluwaseun",
@@ -56,6 +50,12 @@ export const slides = [
       img: "/Hamzat.png",
       linkedin: "https://www.linkedin.com/in/oluwaseun-hamzat/",
     },  
+    {
+      name: "Ebenezer Don",
+      // role: "role",
+      img: "/Ebener.png",
+      linkedin: "https://www.linkedin.com/in/ebenezerdon/",
+    },
     {
       name: "Haneefah Abudurahman",
       // role: "role",
