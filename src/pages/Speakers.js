@@ -17,7 +17,7 @@ function Speakers() {
 
             <div className="absolute inset-0 flex flex-col justify-center py-10 sm:px-6 px-2 "></div>
 
-            <div className="grid sm:grid-cols-3  py-6 rounded-lg xx:grid-cols-1 gap-2 z-10">
+            <div className="grid sm:grid-cols-3  py-6 rounded-lg xx:grid-cols-1 gap-8 z-10">
                 {speakers.map((speaker, index) => (
                     <div
                         className="relative overflow-hidden rounded-lg "
@@ -38,15 +38,15 @@ function Speakers() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: hoveredSpeaker === index ? 0.8 : 0 }}
                             transition={{ duration: 0.3 }}
-                            className={`absolute inset-0 flex flex-row items-end py-3 cursor-pointer  bg-[#ffd100] text-black font-bold opacity-10 text-xl`}
+                            className={`absolute inset-0 flex flex-row items-end py-3 cursor-pointer  bg-black text-[#ffd100] font-bold opacity-10 text-xl`}
                         >
                             <div className='px-5 '>
-                                <h1 className="text-xl font-bold ">{speaker.name}</h1>
+                                <h1 className="text-lg font-bold ">{speaker.name}</h1>
+                                <div className='text-sm font-semibold text-white'>{speaker.role}</div>
                             </div>
 
 
                             <div className='flex  pl-7 flex-col mt-[-2]'>
-                                {/* <p className='py-1 '>{speaker.role}</p> */}
                                 <a href={speaker.linkedin} className='flex justify-center'>
                                     <BiLogoLinkedinSquare className="text-[#0e76a8] hover:text-[#006290]" size={30} />
                                 </a>
