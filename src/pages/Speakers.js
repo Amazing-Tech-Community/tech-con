@@ -17,7 +17,7 @@ function Speakers() {
 
             <div className="absolute inset-0 flex flex-col justify-center py-10 sm:px-6 px-2 "></div>
 
-            <div className="grid sm:grid-cols-3  py-6 rounded-lg xx:grid-cols-1 gap-8 z-10">
+            <div className="grid sm:grid-cols-3  py-6 rounded-lg xx:grid-cols-1 gap-12 z-10">
                 {speakers.map((speaker, index) => (
                     <div
                         className="relative overflow-hidden rounded-lg "
@@ -30,7 +30,7 @@ function Speakers() {
                             alt={speaker.name}
                             width={300}
                             height={350}
-                            className={`w-[300px] h-[350px] cursor-pointer transform scale-100 transition-transform duration-300 ${hoveredSpeaker === index ? 'scale-105' : ''
+                            className={`w-full h-[350px]  cursor-pointer transform scale-100 transition-transform duration-300 ${hoveredSpeaker === index ? 'scale-105' : ''
                                 }`}
                         />
 
@@ -38,17 +38,17 @@ function Speakers() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: hoveredSpeaker === index ? 0.8 : 0 }}
                             transition={{ duration: 0.3 }}
-                            className={`absolute inset-0 flex flex-row items-end py-3 cursor-pointer  bg-black text-[#ffd100] font-bold opacity-10 text-xl`}
+                            className={`absolute inset-0 flex justify-between flex-row items-end py-3 cursor-pointer  bg-black text-[#ffd100] font-bold opacity-10 text-xl`}
                         >
-                            <div className='px-5 '>
-                                <h1 className="text-lg font-bold ">{speaker.name}</h1>
+                            <div className='px-4'>
+                                <h1 className="text-lg font-bold text-[#ffd100] ">{speaker.name}</h1>
                                 <div className='text-sm font-semibold text-white'>{speaker.role}</div>
                             </div>
 
 
-                            <div className='flex  pl-7 flex-col mt-[-2]'>
+                            <div className='flex px-4 flex-col'>
                                 <a href={speaker.linkedin} className='flex justify-center'>
-                                    <BiLogoLinkedinSquare className="text-[#0e76a8] hover:text-[#006290]" size={30} />
+                                    <BiLogoLinkedinSquare className="text-[#0e76a8] hover:text-[#006290]" size={25} />
                                 </a>
                             </div>
 

@@ -78,16 +78,17 @@ const SectionOne = () => {
               <motion.div
 
                 className='bg-[#fafafa]  flex flex-col justify-between transition-all duration-500  hover:rotate-1 hover:scale-80 text-[#1e1e1e]  rounded-lg  shadow-md '>
-                <h1 className='py-4 font-extrabold flex justify-center bg-[#ffd100] text-2xl'>Standard Ticket (₦4000)</h1>
+                <h1 className='py-4 font-extrabold flex justify-center bg-[#ffd100] text-2xl'>Regular Ticket (₦4000)</h1>
 
                 <div>
+                <h1 className=' px-4 font-semibold'>All-inclusive benefits: </h1>
                   <ul className='text-sm py-1 px-4 font-semibold'>
-                    <li className='py-1'>Everything is FREE </li>
-                    <li className='py-1'>Participate in a workshop and get a certificate </li>
-                    <li className='py-1'>Opportunity to participate in the event hackathon </li>
-                    <li className='py-1'>Opportunity to pitch your Startup and win a financial grant </li>
-                    <li className='py-1'> Networking with diverse attendees </li>
-                    <li className='py-1'> Hear from seasoned industry speakers and experts </li>
+                    <li className='py-1'>Attend TSC and receive a certificate </li>
+                    <li className='py-1'>Chance to join the event hackathon</li>
+                    <li className='py-1'>Network with a diverse group of participants </li>
+                    <li className='py-1'>Enjoy complimentary refreshments </li>
+                    <li className='py-1'>Listen to insights from seasoned industry speakers and experts </li>
+                    <li className='py-1'> Access to a notebook </li>
 
                   </ul>
                 </div>
@@ -115,12 +116,13 @@ const SectionOne = () => {
                 </div>
 
                 <div>
+                  <h1 className=' px-2 font-semibold'>Includes all Standard benefits, plus: </h1>
                   <ul className='list-none py-2 px-2 font-semibold'>
-                    <li className='py-1' >Everything is Standard  </li>
                     <li className='py-1'>Free access to premium resources that will aid professional growth </li>
                     <li className='py-1'>One-on-one mentorship with industry experts</li>
-                    <li className='py-1'>Access to the career and job fair </li>
-                    <li className='py-1'>Access to premium branded swag shirts </li>
+                    <li className='py-1'>Entry into a raffle </li>
+                    <li className='py-1'>Additional refreshments and meals</li>
+                    <li className='py-1'>Exclusive premium branded swag shirts and other souvenirs </li>
 
                   </ul>
                 </div>

@@ -18,10 +18,10 @@ const SectionSix = () => {
 
       <div className="absolute inset-0 flex flex-col justify-center py-16 sm:px-6 px-2 "></div>
 
-      <div className="grid sm:grid-cols-3 py-4 xx:grid-cols-1 gap-8 z-10">
+      <div className="grid sm:grid-cols-3 py-4 xx:grid-cols-1 gap-14 z-10">
         {speakers.map((speaker, index) => (
           <div
-            className="relative overflow-hidden rounded-lg px-6"
+            className="relative overflow-hidden rounded-lg px-3"
             key={speaker.name}
             onMouseEnter={() => setHoveredSpeaker(index)}
             onMouseLeave={() => setHoveredSpeaker(null)}
@@ -32,7 +32,7 @@ const SectionSix = () => {
               alt={speaker.name}
               width={300}
               height={350}
-              className={`w-[300px] h-[350px] cursor-pointer transform scale-100 transition-transform duration-300 ${hoveredSpeaker === index ? 'scale-105' : ''
+              className={`w-full h-[350px] cursor-pointer transform scale-100 transition-transform duration-300 ${hoveredSpeaker === index ? 'scale-105' : ''
                 }`}
             />
 
@@ -40,7 +40,7 @@ const SectionSix = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: hoveredSpeaker === index ? 0.8 : 0 }}
               transition={{ duration: 0.3 }}
-              className={`absolute inset-0 flex flex-row items-end py-3 cursor-pointer  bg-black text-black font-bold text-xl  opacity-1`}
+              className={`absolute inset-0 flex flex-row justify-between items-end py-3 cursor-pointer  bg-black text-black font-bold text-xl  opacity-1`}
             >
               <div className='px-4'>
                 <h1 className="text-lg font-bold text-[#ffd100] ">{speaker.name}</h1>

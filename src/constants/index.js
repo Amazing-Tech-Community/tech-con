@@ -86,6 +86,59 @@ export const slides = [
       img: "/Victor.png",
       linkedin: "https://www.linkedin.com/in/thevictormadu/",
     },
-   
+    {
+      name: "Adeyemi Aderinto",
+      role: "Founder and CEO, SQI of ICT",
+      img: "/Adeyemi.jpg",
+      linkedin: "https://www.linkedin.com/in/adeyemi-aderinto-4318172b/",
+    },
+    {
+      name: "Ayobami Atolagbe",
+      role: "Ambassador Program Manager, NoOnes",
+      img: "/Ayobami.jpg",
+      linkedin: "https://www.linkedin.com/in/ayobamiatolagbe",
+    },
+    {
+      name: "Ibukun Atoro",
+      role: "Founder, Learn Stem",
+      img: "/Ibukun.jpg",
+      linkedin: "https://www.linkedin.com/in/ayobamiatolagbe",
+    },
+    {
+      name: "Segun Olaniyan",
+      role: "Third Party Risk Analyst",
+      img: "/Segun.png",
+      linkedin: "https://www.linkedin.com/in/cyberapostle/ ",
+    },
+    {
+      name: "Sam Aiyesoro",
+      role: "MD/CEO Wiseki Technologies",
+      img: "/Sam.png",
+      linkedin: "https://www.linkedin.com/in/aiyeboy/",
+    },
+    {
+      name: "Sodiq Akinjobi",
+      role: "MD/CEO Wiseki Technologies",
+      img: "/Sodiq.jpg",
+      linkedin: " https://www.linkedin.com/in/geektutor/",
+    },
+    {
+      name: " Omomame Imafidon",
+      role: " Lead,Polygon Guild Ibadan",
+      img: "/Omomame.jpg",
+      linkedin: " https://www.linkedin.com/in/omomame-imafidon-7a9839204/",
+    },
+    {
+      name: "Tim Oladoyingbo",
+      role: "Founder & CEO, Digikraaft",
+      img: "/Tim.png",
+      linkedin: " https://www.linkedin.com/in/omomame-imafidon-7a9839204/",
+    },
+    {
+      name: "Idris Taiwo",
+      role: "CMO Cardify",
+      img: "/Idris.jpg",
+      linkedin: "https://www.linkedin.com/in/idris-taiwo/",
+    },
 
   ];
