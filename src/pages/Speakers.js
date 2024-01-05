@@ -17,7 +17,7 @@ function Speakers() {
 
             <div className="absolute inset-0 flex flex-col justify-center py-10 sm:px-6 px-2 "></div>
 
-            <div className="grid sm:grid-cols-3  py-6 rounded-lg xx:grid-cols-1 gap-12 z-10">
+            <div className="grid sm:grid-cols-3 md:grid-cols-4 py-4 xx:grid-cols-1 sm:gap-8 z-10">
                 {speakers.map((speaker, index) => (
                     <div
                         className="relative overflow-hidden rounded-lg "
@@ -28,9 +28,9 @@ function Speakers() {
                         <Image
                             src={speaker.img}
                             alt={speaker.name}
-                            width={300}
+                            width={280}
                             height={350}
-                            className={`w-full h-[350px]  cursor-pointer transform scale-100 transition-transform duration-300 ${hoveredSpeaker === index ? 'scale-105' : ''
+                            className={` h-[350px] object-cover cursor-pointer transform scale-100 transition-transform duration-300 ${hoveredSpeaker === index ? 'scale-105' : ''
                                 }`}
                         />
 

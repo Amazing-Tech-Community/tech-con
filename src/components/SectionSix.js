@@ -12,16 +12,16 @@ const SectionSix = () => {
 
   return (
     <div className="relative  sm:py-10 xx:p-5 flex flex-col items-center justify-center">
-      <div>
+      <div className=' justify-center'>
         <AnimatedText text="Speakers" className='xx:text-4xl sm:text-4xl z-10 font-semibold  text-white' />
       </div>
 
       <div className="absolute inset-0 flex flex-col justify-center py-16 sm:px-6 px-2 "></div>
 
-      <div className="grid sm:grid-cols-3 py-4 xx:grid-cols-1 gap-14 z-10">
-        {speakers.map((speaker, index) => (
+      <div className="grid sm:grid-cols-4 md:grid-cols-4 py-4 xx:grid-cols-1 xx:gap-4 sm:gap-8 z-10">
+        {speakers.slice(0, 4).map((speaker, index) => (
           <div
-            className="relative overflow-hidden rounded-lg px-3"
+            className="relative overflow-hidden rounded-lg "
             key={speaker.name}
             onMouseEnter={() => setHoveredSpeaker(index)}
             onMouseLeave={() => setHoveredSpeaker(null)}
@@ -30,9 +30,9 @@ const SectionSix = () => {
             <Image
               src={speaker.img}
               alt={speaker.name}
-              width={300}
+              width={280}
               height={350}
-              className={`w-full h-[350px] cursor-pointer transform scale-100 transition-transform duration-300 ${hoveredSpeaker === index ? 'scale-105' : ''
+              className={` h-[350px] object-cover  cursor-pointer transform scale-100 transition-transform duration-300 ${hoveredSpeaker === index ? 'scale-105' : ''
                 }`}
             />
 
@@ -57,7 +57,19 @@ const SectionSix = () => {
             </motion.div>
           </div>
         ))}
+
+        <div>
+          <button className=' p-2 rounded-md bg-[#ffd100] text-[#1e1e1e] hover:bg-[#1e1e1e] hover:border-2 hover:border-[#ffd100] hover:text-[#ffd100]'>
+            <Link href='/Speakers'>
+
+              See more...
+
+            </Link>
+          </button>
+        </div>
       </div>
+
+
     </div>
   );
 };

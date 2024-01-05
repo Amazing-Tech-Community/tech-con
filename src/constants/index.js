@@ -49,12 +49,6 @@ export const slides = [
       role: "Program Manager at Kibo",
       img: "/Hamzat.png",
       linkedin: "https://www.linkedin.com/in/oluwaseun-hamzat/",
-    },  
-    {
-      name: "Ebenezer Don",
-      role: "Author of Simplified JavaScript for VIPs & Git Prodigy",
-      img: "/Ebener.png",
-      linkedin: "https://www.linkedin.com/in/ebenezerdon/",
     },
     {
       name: "Haneefah Abudurahman",
@@ -127,6 +121,12 @@ export const slides = [
       role: " Lead,Polygon Guild Ibadan",
       img: "/Omomame.jpg",
       linkedin: " https://www.linkedin.com/in/omomame-imafidon-7a9839204/",
+    },  
+    {
+      name: "Ebenezer Don",
+      role: "Author of Simplified JavaScript for VIPs & Git Prodigy",
+      img: "/Ebener.png",
+      linkedin: "https://www.linkedin.com/in/ebenezerdon/",
     },
     {
       name: "Tim Oladoyingbo",
