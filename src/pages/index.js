@@ -19,6 +19,7 @@ export default function Home() {
       <Head>
         <title>Tech Starters</title>
         <meta name="description" content="Welcome to Tech Starters" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
       </Head>
 
       <main>
