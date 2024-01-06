@@ -41,13 +41,19 @@ export const slides = [
     {
       name: "Balogun Danjuma",
       role: "Converner, Ibadan Tech Expo",
-      img: "/Balogun.png",
+      img: "/Balogun.jpg",
       linkedin: "https://www.linkedin.com/in/danjuma-balogun-887b261a7/",
     },
     {
       name: "Hamzat Oluwaseun",
       role: "Program Manager at Kibo",
       img: "/Hamzat.png",
+      linkedin: "https://www.linkedin.com/in/oluwaseun-hamzat/",
+    },
+    {
+      name: "Tope James Moses",
+      role: "Lead, ATC Africa",
+      img: "/Tope.jpg",
       linkedin: "https://www.linkedin.com/in/oluwaseun-hamzat/",
     },
     {
@@ -139,6 +145,12 @@ export const slides = [
       role: "CMO Cardify",
       img: "/Idris.jpg",
       linkedin: "https://www.linkedin.com/in/idris-taiwo/",
+    },
+    {
+      name: "Ayoade Adegbite",
+      role: "Tableau Ibadan Lead",
+      img: "/Ayoade.png",
+      linkedin: "https://www.linkedin.com/in/tripleaceme/",
     },
 
   ];

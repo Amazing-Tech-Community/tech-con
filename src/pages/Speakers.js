@@ -17,7 +17,7 @@ function Speakers() {
 
             <div className="absolute inset-0 flex flex-col justify-center py-10 sm:px-6 px-2 "></div>
 
-            <div className="grid sm:grid-cols-3 md:grid-cols-4 py-4 xx:grid-cols-1 sm:gap-8 z-10">
+            <div className="grid sm:grid-cols-3 md:grid-cols-4 py-4 xx:grid-cols-1 sm:gap-8 xx:gap-4 z-10">
                 {speakers.map((speaker, index) => (
                     <div
                         className="relative overflow-hidden rounded-lg "
