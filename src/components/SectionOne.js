@@ -148,6 +148,7 @@ const SectionOne = () => {
 
                 <div>
                   <ul className='list-none font-semibold py-1 px-2'>
+                  <li className='py-1'>Access to Conference hall</li>
                     <li className='py-1'>Access to the live stream and recorded event</li>
                     <li className='py-1'>Online Swags</li>
 

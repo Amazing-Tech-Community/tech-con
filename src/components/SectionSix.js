@@ -18,7 +18,7 @@ const SectionSix = () => {
 
       <div className="absolute inset-0 flex flex-col justify-center py-16 sm:px-6 px-2 "></div>
 
-      <div className="grid sm:grid-cols-4 md:grid-cols-4 py-4 xx:grid-cols-1 xx:gap-4 sm:gap-8 z-10">
+      <div className="grid sm:grid-cols-2 md:grid-cols-4 py-4 xx:grid-cols-1 xx:gap-4 sm:gap-8 z-10">
         {speakers.slice(0, 4).map((speaker, index) => (
           <div
             className="relative overflow-hidden rounded-lg "

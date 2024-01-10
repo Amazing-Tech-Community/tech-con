@@ -1,70 +1,105 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
 import pinkApp from "../images/app.png";
 import cardify from "../images/cardify.png";
 import te from "../images/te.png";
 import techappen from "../images/techappen.png";
 import Image from 'next/image';
-import AnimatedText from '../components/AnimatedText';
+import cmx from '../images/cmx.png'
+import gdcibad from '../images/gdcibad.png'
+import guild from '../images/guild.png'
+import imta from '../images/imta.png'
+import isu from '../images/isu.png'
+import ite from '../images/ite.png'
+import nacos from '../images/nacos.png'
+import ibtc from '../images/ibtc.png'
+import gdc from '../images/gdc.jpg'
+import nuesa from '../images/nuesa.jpg'
 
 const Sponsors = () => {
-    return (
-        <div className='flex flex-col  py-8'>
+  const logos = [
+    { src: te, width: 100, height: 50,  },
+    { src: cardify, width: 200, height: 100, },
+    { src: pinkApp, width: 200, height: 100,  },
+    { src: techappen, width: 200, height: 100,  },
+  ];
 
-             <div className='flex justify-center'>
-            <h1 className="text-green py-4 font-bold">
-                <b className="text-white font-bold text-3xl">Sponsors</b>
-            </h1>
-            </div>
-          
+  const partners = [
+    { src: cmx, width: 140, height: 100, delay: 0 },
+    { src: gdc, width: 180, height: 100, delay: 0.2 },
+    { src: gdcibad, width: 170, height: 100, delay: 0.4 },
+    { src: guild, width: 180, height: 100, delay: 0.6 },
+    { src: ibtc, width: 180, height: 100, delay: 0.2 },
+    { src: imta, width: 180, height: 100, delay: 0.4 },
+    { src: isu, width: 180, height: 100, delay: 0.6 },
+    { src: ite, width: 180, height: 100, delay: 0.2 },
+    { src: nacos, width: 140, height: 100, delay: 0.4 },
+    { src: nuesa, width: 140, height: 100, delay: 0.6 },
+  ];
 
-            <div className='flex flex-row bg-white rounded-lg justify-center py-8'>
-                <div className='px-3'>
-                    <Image
-                        src={pinkApp}
-                        alt="img"
-                        width={200}
-                        height={100}
-                        className=""
-                    />
-                </div>
+  return (
+    <div className='flex flex-col  py-8'>
+      <div className='flex justify-center'>
+        <h1 className="text-green py-4 font-bold">
+          <b className="text-white font-bold text-3xl">Sponsors</b>
+        </h1>
+      </div>
 
-                <div className=' px-4 mt-6'>
-                    <Image
-                        src={cardify}
-                        alt="img"
-                        width={200}
-                        height={100}
-                        className=""
-                    />
-                </div>
+      <motion.div
+        className='grid sm:grid-cols-4 md:grid-cols-4 xx:grid-cols-1 xx:gap-4 sm:gap-2 bg-white rounded-lg justify-center py-8'
+      >
+        {logos.map((logo, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 5, repeat: 1, repeatType: 'loop', delay: 1 }}
+             whileHover={{ scale: 1.5 }}
+            className='px-4 pb-5 flex justify-center items-center'
+          >
+            <Image
+              src={logo.src}
+              alt="img"
+              width={logo.width}
+              height={logo.height}
+              className=""
+            />
+          </motion.div>
+        ))}
+      </motion.div>
 
-                <div className=' px-4'>
-                    <Image
-                        src={te}
-                        alt="img"
-                        width={100}
-                        height={50}
-                        className=""
-                    />
-                </div>
+      <div className='flex justify-center py-4'>
+        <h1 className="text-green py-4 font-bold">
+          <b className="text-white font-bold text-3xl">Community Partners</b>
+        </h1>
+      </div>
 
-                <div className='px-3 mt-2'>
-                    <Image
-                        src={techappen}
-                        alt="img"
-                        width={200}
-                        height={100}
-                        className=""
-                    />
-                </div>
-            </div> 
+      <motion.div
+        className='grid sm:grid-cols-3 md:grid-cols-5 xx:grid-cols-1 xx:gap-4 sm:gap-2 z-10 bg-white rounded-lg  py-8'
+      >
+        {partners.map((partner, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 5, repeat: 1, repeatType: 'loop', delay: 1 }}
+            whileHover={{ scale: 1.5 }}
+            className=' mt-2 flex justify-center items-center'
+          >
+            <Image
+              src={partner.src}
+              alt="img"
+              width={partner.width}
+              height={partner.height}
+           
+              className=""
+            />
+          </motion.div>
+        ))}
+      </motion.div>
 
-            {/* <div>
-                <AnimatedText text="Coming Soon" className='xx:text-4xl sm:text-4xl z-10 font-bold  text-[#ffd100]' />
-            </div> */}
+    </div>
+  );
+};
 
-        </div>
-    )
-}
-
-export default Sponsors
+export default Sponsors;
