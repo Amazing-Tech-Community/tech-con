@@ -148,9 +148,10 @@ const SectionOne = () => {
 
                 <div>
                   <ul className='list-none font-semibold py-1 px-2'>
+                  <li className='py-1'>Network with a diverse group of participants</li>
                   <li className='py-1'>Access to Conference hall</li>
-                    <li className='py-1'>Access to the live stream and recorded event</li>
-                    <li className='py-1'>Online Swags</li>
+                    <li className='py-1'>Listen to insights from seasoned industry speakers and experts</li>
+                    <li className='py-1'>Entry into a raffle</li>
 
                     {/* <h1 className='py-10 flex justify-center'>Coming Soon</h1> */}
 
@@ -162,7 +163,7 @@ const SectionOne = () => {
                 <div className='px-1 flex justify-center py-3 mt-40'>
                   <button className='flex justify-between flex-row  py-2 px-2 rounded-md shadow-md bg-[#ffd100]  text-[#1e1e1e] ' disabled>
                     <h1 className='px-1'>
-                    <a href='https://eventprime.co/e/tech-starters-conference-2-0' target={'_blank'}> Get Ticket</a>
+                    <a href='https://docs.google.com/forms/u/2/d/e/1FAIpQLSeRarxb_RYMuJwAK8bdoll17evUrZci4Qnp-yz877Y4CxKcpQ/viewform' target={'_blank'}> Get Ticket</a>
                     </h1>
 
                     <MdAddCircle className='w-5 h-5 mt-0.5 text-[#1e1e1e] hover:text-white' />
