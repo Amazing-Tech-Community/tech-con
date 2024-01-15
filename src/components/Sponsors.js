@@ -2,8 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import pinkApp from "../images/app.png";
 import cardify from "../images/cardify.png";
-import te from "../images/te.png";
-import techappen from "../images/techappen.png";
+import microsoft from "../images/microsoft.png";
+import noones from "../images/noones.png";
+import found from "../images/found.jpg";
 import Image from 'next/image';
 import cmx from '../images/cmx.png'
 import gdcibad from '../images/gdcibad.png'
@@ -18,10 +19,11 @@ import nuesa from '../images/nuesa.jpg'
 
 const Sponsors = () => {
   const logos = [
-    { src: te, width: 100, height: 50,  },
+    { src: microsoft, width: 200, height: 100,  },
     { src: cardify, width: 200, height: 100, },
     { src: pinkApp, width: 200, height: 100,  },
-    { src: techappen, width: 200, height: 100,  },
+    { src: noones, width: 200, height: 100,  },
+    { src: found, width: 200, height: 100,  },
   ];
 
   const partners = [
@@ -38,7 +40,7 @@ const Sponsors = () => {
   ];
 
   return (
-    <div className='flex flex-col  py-8'>
+    <div className='flex flex-col  py-7'>
       <div className='flex justify-center'>
         <h1 className="text-green py-4 font-bold">
           <b className="text-white font-bold text-3xl">Sponsors</b>
@@ -46,7 +48,7 @@ const Sponsors = () => {
       </div>
 
       <motion.div
-        className='grid sm:grid-cols-4 md:grid-cols-4 xx:grid-cols-1 xx:gap-4 sm:gap-2 bg-white rounded-lg justify-center py-8'
+        className='grid sm:grid-cols-3 md:grid-cols-4 xx:grid-cols-1 xx:gap-4 sm:gap-2 bg-white rounded-lg justify-center py-8'
       >
         {logos.map((logo, index) => (
           <motion.div
@@ -55,7 +57,7 @@ const Sponsors = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 5, repeat: 1, repeatType: 'loop', delay: 1 }}
              whileHover={{ scale: 1.5 }}
-            className='px-4 pb-5 flex justify-center items-center'
+            className='px-4 pb-3 flex justify-center items-center'
           >
             <Image
               src={logo.src}
