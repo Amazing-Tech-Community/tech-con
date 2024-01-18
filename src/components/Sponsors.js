@@ -16,6 +16,7 @@ import nacos from '../images/nacos.png'
 import ibtc from '../images/ibtc.png'
 import gdc from '../images/gdc.jpg'
 import nuesa from '../images/nuesa.jpg'
+import uisu from '../images/uisu.png'
 
 const Sponsors = () => {
   const logos = [
@@ -31,6 +32,7 @@ const Sponsors = () => {
     { src: gdc, width: 180, height: 100, delay: 0.2 },
     { src: gdcibad, width: 170, height: 100, delay: 0.4 },
     { src: guild, width: 180, height: 100, delay: 0.6 },
+    { src: uisu, width: 180, height: 100, delay: 0.6 },
     { src: ibtc, width: 180, height: 100, delay: 0.2 },
     { src: imta, width: 180, height: 100, delay: 0.4 },
     { src: isu, width: 180, height: 100, delay: 0.6 },
