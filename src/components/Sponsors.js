@@ -43,13 +43,13 @@ const Sponsors = () => {
 
   return (
     <div className='flex flex-col  py-7'>
-      <div className='flex justify-center'>
+      {/* <div className='flex justify-center'>
         <h1 className="text-green py-4 font-bold">
           <b className="text-white font-bold text-3xl">Sponsors</b>
         </h1>
-      </div>
+      </div> */}
 
-      <motion.div
+      {/* <motion.div
         className='grid sm:grid-cols-3 md:grid-cols-4 xx:grid-cols-1 xx:gap-4 sm:gap-2 bg-white rounded-lg justify-center py-8'
       >
         {logos.map((logo, index) => (
@@ -70,7 +70,7 @@ const Sponsors = () => {
             />
           </motion.div>
         ))}
-      </motion.div>
+      </motion.div> */}
 
       <div className='flex justify-center py-4'>
         <h1 className="text-green py-4 font-bold">
