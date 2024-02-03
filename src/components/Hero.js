@@ -133,9 +133,10 @@ const Hero = () => {
                   initial={{ y: 200 }}
                   animate={{ y: 0 }}
                   transition={{ delay: 0.8, duration: 2.4 }}
-                  className='pt-3'
+                  className='pt-3 flex justify-center'
                 >
-                  <Countdown />
+                  {/* <Countdown /> */}
+               
                 </motion.div>
               </div>
             </div>
